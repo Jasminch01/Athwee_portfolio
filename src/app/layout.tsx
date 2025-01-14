@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 const generalSans = localFont({
   src: [
     {
-      path: "/src/assets/fonts/GeneralSans-Regular.otf",
+      path: "../assets/fonts/GeneralSans-Regular.otf",
       weight: "400",
       style: "normal",
     },
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${generalSans.variable} antialiased`}>
+      <body className={`${generalSans.variable} font-generalSans antialiased`}>
         <Appbar />
         {children}
       </body>
