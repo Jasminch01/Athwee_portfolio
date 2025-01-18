@@ -10,6 +10,26 @@ const generalSans = localFont({
       weight: "400",
       style: "normal",
     },
+    {
+      path: "../assets/fonts/GeneralSans-Bold.otf",
+      weight: "700",
+      style: "bold",
+    },
+    {
+      path: "../assets/fonts/GeneralSans-Light.otf",
+      weight: "300",
+      style: "light",
+    },
+    {
+      path: "../assets/fonts/GeneralSans-Semibold.otf",
+      weight: "500",
+      style: "semibold",
+    },
+    {
+      path: "../assets/fonts/GeneralSans-Medium.otf",
+      weight: "600",
+      style: "medium",
+    },
   ],
   variable: "--font-generalSans",
 });
