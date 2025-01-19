@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import Container from "../Container";
 
 const MiniBanner = () => {
   return (
@@ -8,7 +10,18 @@ const MiniBanner = () => {
       <div className="md:h-[30rem] h-[10rem]"></div>
 
       {/* Bottom Section */}
-      <div className="bg-gradient-to-t from-[#232323] to-[#cb9d69] to-85% rounded-t-[4rem] md:h-[20rem] h-[10rem]"></div>
+      <div className="bg-gradient-to-t from-[#232323] to-[#cb9d69] to-85% rounded-t-[4rem] md:h-[20rem] h-[10rem] relative">
+        <Container>
+          <div className="">
+            <Link
+              href={"/"}
+              className="text-2xl font-bold uppercase text-white absolute bottom-10"
+            >
+              Ath<span className=" text-[#F19934]">wee.</span>{" "}
+            </Link>
+          </div>
+        </Container>
+      </div>
 
       {/* Image Positioned in the Middle */}
       <div className="absolute md:top-[15rem] top-20 left-1/2 transform -translate-x-1/2 ">

@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import Container from "./Container";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Appbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -26,6 +28,11 @@ const Appbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div
       className={`md:absolute fixed  z-50 top-0 w-full mx-auto pt-10 ${
@@ -36,9 +43,12 @@ const Appbar = () => {
         <div className="">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-2xl font-bold uppercase text-white">
+              <Link
+                href={"/"}
+                className="text-2xl font-bold uppercase text-white"
+              >
                 Ath<span className=" text-[#F19934]">wee.</span>{" "}
-              </p>
+              </Link>
             </div>
             <div className="space-x-5 text-white hidden md:block">
               <Link href={"#feature"}>Social</Link>
@@ -63,8 +73,8 @@ const Appbar = () => {
           <div>
             {isOpen && (
               <div
-                // data-aos="fade-left"
-                // data-aos-duration="1000"
+                data-aos="fade-right"
+                data-aos-duration="500"
                 className={`fixed inset-x-0 md:hidden top-[70px] bg-[#1C1C1C] z-50 py-5 transform transition-transform duration-700 ease-in-out ${
                   isOpen
                     ? "translate-y-0 opacity-100"
