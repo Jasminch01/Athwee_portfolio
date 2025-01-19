@@ -63,9 +63,9 @@ const Appbar = () => {
           <div>
             {isOpen && (
               <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                className={`fixed inset-x-0 md:hidden top-[70px] bg-[#1C1C1C] z-20 py-5 transform transition-transform duration-700 ease-in-out ${
+                // data-aos="fade-left"
+                // data-aos-duration="1000"
+                className={`fixed inset-x-0 md:hidden top-[70px] bg-[#1C1C1C] z-50 py-5 transform transition-transform duration-700 ease-in-out ${
                   isOpen
                     ? "translate-y-0 opacity-100"
                     : "-translate-y-full opacity-0"
