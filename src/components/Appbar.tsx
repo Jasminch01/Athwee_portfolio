@@ -28,7 +28,7 @@ const Appbar = () => {
 
   return (
     <div
-      className={`md:absolute fixed top-0 w-full mx-auto pt-10 ${
+      className={`md:absolute fixed  z-50 top-0 w-full mx-auto pt-10 ${
         isScrolled && "bg-[#1C1C1C] py-5"
       }`}
     >

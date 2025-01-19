@@ -10,11 +10,13 @@ export default {
     extend: {
       backgroundImage: {
         "gradient-banner": "linear-gradient(120deg, #ff7e5f, #feb47b, #a67aff)",
+        "mini-banner": "url('/banner.png')"
       },
       colors: {},
       fontFamily : {
         generalSans : ['var(--font-generalSans)']
-      }
+      },
+      
     },
   },
   plugins: [],

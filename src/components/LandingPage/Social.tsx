@@ -7,13 +7,13 @@ const Social = () => {
     <div>
       <Container>
         <div className="pb-20">
-          <div className="flex justify-between">
+          <div className="flex md:flex-row flex-col-reverse justify-between">
             <div
               className="
             flex items-center justify-center"
             >
               <div className="">
-                <p className="font-bold text-5xl">
+                <p className="font-bold md:text-5xl text-3xl">
                   EXPLODE <br /> YOUR SOCIALS
                 </p>
                 <p>Let me help you succeed on social media</p>
