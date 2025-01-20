@@ -19,8 +19,8 @@ const Hero = () => {
             <p className="text-5xl font-bold text-white">
               I’m <span className="text-[#F19934]">Athwee </span>Marma
             </p>
-            <p className="text-white md:w-[30rem]">
-              A content creator, I promote good things & spread
+            <p className="text-white md:w-[30rem] mt-3">
+              A content creator, I promote good things & spread <br />
               positivity
             </p>
             <div>
