@@ -24,7 +24,7 @@ const Social = () => {
             </div>
             <div>
               <Image
-                src={"/light.png"}
+                src={"/light-bg.png"}
                 width={500}
                 height={500}
                 alt="light"

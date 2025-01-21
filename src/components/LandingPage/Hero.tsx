@@ -10,13 +10,13 @@ const Hero = () => {
   return (
     <div className=" bg-[#1C1C1C]">
       <Container>
-        <div className="flex flex-col md:flex-row md:pt-72 pt-32 justify-between">
-          <div className="">
-            <div className="text-white text-xl flex items-center">
+        <div className="flex flex-col md:flex-row md:pt-72 pt-32 justify-between h-screen">
+          <div className="mt-10">
+            <div className="text-white text-xl flex items-center mb-10">
               <MdOutlineHorizontalRule className="text-[#F19934]" />{" "}
               <p className="font-semibold"> HELLO</p>
             </div>
-            <p className="text-5xl font-bold text-white">
+            <p className="text-5xl md:text-6xl w-[40rem] font-bold text-white">
               I’m <span className="text-[#F19934]">Athwee </span>Marma
             </p>
             <p className="text-white md:w-[30rem] mt-3">
@@ -28,7 +28,7 @@ const Hero = () => {
                 Let's collaborate
               </button>
             </div>
-            <div className="flex space-x-4 mt-10 md:py-20 pb-[14rem]">
+            <div className="flex space-x-4 mt-10 md:py-[13rem] pb-[14rem]">
               <Link href={"https://www.instagram.com/athwee_marma/#"}>
                 <FaInstagram className="text-white  cursor-pointer" />
               </Link>
@@ -50,7 +50,8 @@ const Hero = () => {
               </Link> */}
             </div>
           </div>
-          <div className="relative w-full h-auto mt-32 md:mt-0">
+
+          <div className="relative w-full mt-32 md:mt-0">
             {/* Circle Background */}
             <div
               className="bg-[#b27f44] h-[200px] w-[250px] md:h-[300px] md:w-[400px] rounded-t-full absolute z-0 
@@ -61,8 +62,8 @@ const Hero = () => {
             <div className="absolute bottom-0 right-0 z-10">
               <Image
                 alt="athwee-image"
-                width={500}
-                height={500}
+                width={700}
+                height={700}
                 className="transition-all duration-300 hover:grayscale"
                 src="/ath.png"
               />
