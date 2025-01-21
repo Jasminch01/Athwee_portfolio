@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { saira } from "@/app/layout";
 
 const About = () => {
   return (
@@ -25,35 +26,36 @@ const About = () => {
               src="/athwee_image.png"
             />
           </div>
-          <div className="space-y-5 justify-end xl:mt-32 mt-5 md:w-[570px]">
-            <p className="md:text-lg">
+          <div
+            className={`space-y-5 justify-end xl:mt-32 mt-5 md:w-[570px] ${saira.className}`}
+          >
+            <p className="md:text-lg font-saira text-justify">
               A passionate content creator known for my engaging and relatable
               content. With a talent for storytelling and a knack for connecting
               with my audience, I make videos and posts that inspire, entertain,
               and educate. My dedication to quality and authenticity has helped
-              <br />
               me carve a unique space in the digital landscape.
             </p>
-            <p className="md:text-lg">
-              My dedication to delivering quality content shines
-              <br /> through. With a deep understanding of my audience's
-              <br /> interests, I combine creativity and humor in my videos.
+            <p className="md:text-lg text-justify">
+              My dedication to delivering quality content shines through. With a
+              deep understanding of my audience's interests, I combine
+              creativity and humor in my videos.
             </p>
           </div>
         </div>
         <div className="flex justify-center xl:justify-start space-x-4 mt-10">
           <Link href={"https://x.com/Athweemarma"}>
-            <FaXTwitter className="  cursor-pointer" />
+            <FaXTwitter className="text-lg" />
           </Link>
           <Link
             href={
               "https://www.linkedin.com/in/athwee-marma-6017941b0/?originalSubdomain=bd"
             }
           >
-            <FaLinkedin className=" cursor-pointer" />
+            <FaLinkedin className="text-lg" />
           </Link>
           <Link href={"https://www.youtube.com/AthweeMarma"}>
-            <FaYoutube className="  cursor-pointer" />
+            <FaYoutube className="text-xl" />
           </Link>
         </div>
       </Container>

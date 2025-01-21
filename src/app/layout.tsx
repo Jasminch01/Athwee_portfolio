@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Appbar from "@/components/Appbar";
+import { Saira } from "next/font/google";
 import localFont from "next/font/local";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  variable: "--font-saira",
+});
 
 const generalSans = localFont({
   src: [
@@ -47,7 +52,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${generalSans.variable} font-generalSans antialiased`}>
-        
         {children}
       </body>
     </html>

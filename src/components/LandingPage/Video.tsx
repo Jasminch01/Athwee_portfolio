@@ -10,42 +10,63 @@ const Video: React.FC<VideoProps> = ({
   likes,
   shares,
   videoUrl,
+  unitOfLikes,
+  unitOfShares,
+  unitOfViews,
 }) => {
+  console.log(unitOfLikes);
   return (
     <div>
-      <div className="bg-white pb-32 rounded-lg relative">
+      <div className="bg-white pb-32 md:w-[385px] rounded-lg relative">
         {/* Video Thumbnail */}
-        <Image
-          className="w-full"
-          src={thumbnail}
-          width={385}
-          height={441}
-          alt={`${title} thumbnail`}
-        />
+        <Link href={videoUrl} target="_blank">
+          <div>
+            <Image
+              className="md:w-[385px] w-full"
+              src={thumbnail}
+              width={385}
+              height={441}
+              alt={`${title} thumbnail`}
+            />
 
-        {/* Play Button */}
-        <div className="absolute inset-0 flex justify-center items-center">
-          <Link href={videoUrl} target="_blank">
-            <button className="w-16 h-16 bg-white text-black rounded-full flex justify-center items-center shadow-lg">
-              ▶
-            </button>
-          </Link>
-        </div>
+            {/* Play Button */}
+            <div className="absolute inset-0 flex justify-center items-center">
+              <button className="w-16 h-16 bg-white text-black rounded-full flex justify-center items-center shadow-lg transform transition-transform duration-300 hover:scale-105">
+                ▶
+              </button>
+            </div>
+          </div>
+        </Link>
 
         {/* Stats Section */}
         <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
-          <div className="flex flex-col md:flex-row space-x-10">
-            <div className="bg-slate-200 text-black rounded-xl px-5 py-2 text-center">
-              <p>Views</p>
-              <p>{views}k</p>
+          <div className="flex space-x-3">
+            <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
+              <div>
+                <p className="text-center">Views</p>
+                <p className="text-center font-bold">
+                  {views}
+                  {unitOfViews}
+                </p>
+              </div>
             </div>
-            <div className="bg-slate-200 text-black rounded-xl px-6 py-2 text-center">
-              <p>Like</p>
-              <p>{likes}k</p>
+            <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
+              <div>
+                <p className="text-center">Likes</p>
+                <p className="text-center font-bold">
+                  {likes}
+                  {unitOfLikes}
+                </p>
+              </div>
             </div>
-            <div className="bg-slate-200 text-black rounded-xl px-5 py-2 text-center">
-              <p>Shares</p>
-              <p>{shares}k</p>
+            <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
+              <div>
+                <p className="text-center">Shares</p>
+                <p className="text-center font-bold">
+                  {shares}
+                  {unitOfShares}
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -13,8 +13,11 @@ export async function getVideos() {
     title,
     "thumbnailUrl": thumbnail.asset->url,
     views,
+    unitOfViews,
     likes,
+    unitOfLikes,
     shares,
+    unitOfShares,
     videoUrl
   }
 `;

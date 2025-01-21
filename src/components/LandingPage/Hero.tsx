@@ -5,21 +5,22 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import { saira } from "@/app/layout";
 
 const Hero = () => {
   return (
     <div className=" bg-[#1C1C1C]">
       <Container>
-        <div className="flex flex-col md:flex-row md:pt-72 pt-32 justify-between h-screen">
+        <div className="flex flex-col md:flex-row md:pt-72 pt-32 justify-between xl:h-screen">
           <div className="mt-10">
             <div className="text-white text-xl flex items-center mb-10">
               <MdOutlineHorizontalRule className="text-[#F19934]" />{" "}
-              <p className="font-semibold"> HELLO</p>
+              <p className={`${saira.className} text-2xl`}> HELLO</p>
             </div>
-            <p className="text-5xl md:text-6xl w-[40rem] font-bold text-white">
+            <p className="text-5xl md:text-6xl xl:w-[40rem] font-bold text-white">
               I’m <span className="text-[#F19934]">Athwee </span>Marma
             </p>
-            <p className="text-white md:w-[30rem] mt-3">
+            <p className={`text-white md:w-[30rem] mt-3 ${saira.className}`}>
               A content creator, I promote good things & spread <br />
               positivity
             </p>
@@ -54,8 +55,8 @@ const Hero = () => {
           <div className="relative w-full mt-32 md:mt-0">
             {/* Circle Background */}
             <div
-              className="bg-[#b27f44] h-[200px] w-[250px] md:h-[300px] md:w-[400px] rounded-t-full absolute z-0 
-               right-4 bottom-4 md:right-16 md:bottom-10 blur-3xl overflow-hidden"
+              className="bg-[#b27f44] h-[200px] w-[250px] md:h-[400px] md:w-[500px] rounded-t-full absolute z-0 
+               right-4 bottom-4 md:right-[5rem] md:bottom-10 blur-3xl overflow-hidden"
             ></div>
 
             {/* Image */}

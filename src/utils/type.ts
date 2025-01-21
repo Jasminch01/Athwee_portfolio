@@ -3,8 +3,11 @@ export interface VideoType {
   title: string;
   thumbnailUrl: string;
   views: number;
+  unitOfViews: string;
   likes: number;
+  unitOfLikes: string;
   shares: number;
+  unitOfShares: string;
   videoUrl: string;
 }
 
@@ -12,7 +15,10 @@ export interface VideoProps {
   title: string;
   thumbnail: string;
   views: number;
+  unitOfViews: string;
   likes: number;
+  unitOfLikes: string;
   shares: number;
+  unitOfShares: string;
   videoUrl: string;
 }

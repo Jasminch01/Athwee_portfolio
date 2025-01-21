@@ -25,21 +25,51 @@ const VideoSchema = {
       title: "Views",
       type: "number",
       description: "Number of views for the video.",
-      validation: (Rule: { min: (arg0: number) => any }) => Rule.min(0),
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "unitOfViews",
+      title: "Unit of views",
+      type: "string",
+      description:
+        "The unit of measurement views (e.g., 'M' for millions, 'K' for thousands).",
+      options: {
+        list: ["K", "K+", "M+", "M", "B", "B+"], // Dropdown for predefined units
+      },
     },
     {
       name: "likes",
       title: "Likes",
       type: "number",
       description: "Number of likes for the video.",
-      validation: (Rule: { min: (arg0: number) => any }) => Rule.min(0),
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "unitOfLikes",
+      title: "Unit of likes",
+      type: "string",
+      description:
+        "The unit of measurement likes (e.g., 'M' for millions, 'K' for thousands).",
+      options: {
+        list: ["K", "K+", "M+", "M", "B", "B+"], // Dropdown for predefined units
+      },
     },
     {
       name: "shares",
       title: "Shares",
       type: "number",
       description: "Number of shares for the video.",
-      validation: (Rule: { min: (arg0: number) => any }) => Rule.min(0),
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "unitOfShares",
+      title: "Unit of shares",
+      type: "string",
+      description:
+        "The unit of measurement shares (e.g., 'M' for millions, 'K' for thousands).",
+      options: {
+        list: ["K", "K+", "M+", "M", "B", "B+"], // Dropdown for predefined units
+      },
     },
     {
       name: "videoUrl",

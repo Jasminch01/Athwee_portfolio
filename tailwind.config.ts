@@ -14,7 +14,8 @@ export default {
       },
       colors: {},
       fontFamily : {
-        generalSans : ['var(--font-generalSans)']
+        generalSans : ['var(--font-generalSans)'],
+        saira : ['var(--font-saira)']
       },
       
     },
