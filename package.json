@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/desk-tool": "^2.36.2",
     "aos": "^3.0.0-beta.6",
     "next": "15.1.4",
+    "next-sanity": "^9.8.39",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "sanity": "^3.70.0",
+    "styled-components": "^6.1.14",
     "swiper": "^11.2.1"
   },
   "devDependencies": {
@@ -21,6 +25,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/styled-components": "^5.1.34",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

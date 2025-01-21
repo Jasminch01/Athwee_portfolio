@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${generalSans.variable} font-generalSans antialiased`}>
-        <Appbar />
+        
         {children}
       </body>
     </html>
