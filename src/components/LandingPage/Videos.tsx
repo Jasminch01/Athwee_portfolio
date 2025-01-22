@@ -65,8 +65,9 @@ const Videos = () => {
                   `<span class="${className} custom-bullet"></span>`,
               }}
               freeMode={true}
-              modules={[FreeMode, Pagination]}
+              modules={[FreeMode, Pagination,]}
               allowTouchMove={true}
+              mousewheel = {true}
             >
               {videos.map((video, index) => (
                 <SwiperSlide

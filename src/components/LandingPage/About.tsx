@@ -12,7 +12,7 @@ const saira = Saira({
 
 const About = () => {
   return (
-    <div className="md:py-20 py-10">
+    <div className="md:pt-36 md:pb-20 py-10">
       <Container>
         {/* "About Me" Text */}
 
