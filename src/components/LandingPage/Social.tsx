@@ -8,7 +8,7 @@ const saira = Saira({
 });
 const Social = () => {
   return (
-    <div>
+    <div id="social">
       <Container>
         <div className="pb-20">
           <div className="flex md:flex-row flex-col-reverse justify-between">

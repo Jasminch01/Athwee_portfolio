@@ -51,7 +51,7 @@ const Appbar = () => {
               </Link>
             </div>
             <div className="space-x-5 text-white hidden md:block">
-              <Link href={"#feature"}>Social</Link>
+              <Link href={"#social"}>Social</Link>
               <Link href={"#feature"}>Videos</Link>
               <Link href={"#about"}>About</Link>
               <Link href={"#contact"}>Let's connect</Link>
