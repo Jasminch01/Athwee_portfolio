@@ -90,10 +90,10 @@ const Testimonials = () => {
                 <div>
                   <h3 className="text-xl font-semibold">{testimonial.name}</h3>
                   <p className="text-lg">{testimonial.title}</p>
+                  <p className="mt-4 text-xl text-gray-700 overflow-hidden text-ellipsis">
+                    {testimonial.feedback}
+                  </p>
                 </div>
-                <p className="mt-4 text-xl text-gray-700 overflow-hidden text-ellipsis">
-                  {testimonial.feedback}
-                </p>
               </div>
             </div>
           </SwiperSlide>
