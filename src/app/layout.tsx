@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Saira } from "next/font/google";
 import localFont from "next/font/local";
-
-export const saira = Saira({
-  subsets: ["latin"],
-  variable: "--font-saira",
-});
 
 const generalSans = localFont({
   src: [

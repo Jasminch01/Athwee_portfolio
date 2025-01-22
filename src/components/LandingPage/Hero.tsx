@@ -5,7 +5,11 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-import { saira } from "@/app/layout";
+import { Saira } from "next/font/google";
+const saira = Saira({
+  subsets: ["latin"],
+  variable: "--font-saira",
+});
 
 const Hero = () => {
   return (

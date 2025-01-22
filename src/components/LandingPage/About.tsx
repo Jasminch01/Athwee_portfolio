@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { saira } from "@/app/layout";
+import { Saira } from "next/font/google";
+const saira = Saira({
+  subsets: ["latin"],
+  variable: "--font-saira",
+});
 
 const About = () => {
   return (
