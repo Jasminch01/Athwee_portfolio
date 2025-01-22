@@ -48,11 +48,23 @@ const brands = [
     alt: "brand-logo",
   },
   {
-    path: "/kk.svg",
+    path: "/dp-world.svg",
     alt: "brand-logo",
   },
   {
-    path: "/gg.svg",
+    path: "/go-pro.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/infocom.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/creator.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/google.svg",
     alt: "brand-logo",
   },
 ];
@@ -105,6 +117,26 @@ const brands1 = [
     path: "/karat.svg",
     alt: "brand-logo",
   },
+  {
+    path: "/earth.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/gg.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/kk.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/google.svg",
+    alt: "brand-logo",
+  },
+  {
+    path: "/karat.svg",
+    alt: "brand-logo",
+  },
 ];
 
 const Brands = () => {
@@ -135,6 +167,7 @@ const Brands = () => {
               {brands1.map((logo, idx) => (
                 <div key={idx}>
                   <Image
+                    className="w-full"
                     src={logo.path}
                     alt={logo.alt}
                     width={120}

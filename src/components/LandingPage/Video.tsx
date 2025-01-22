@@ -16,15 +16,15 @@ const Video: React.FC<VideoProps> = ({
 }) => {
   console.log(unitOfLikes);
   return (
-    <div>
-      <div className="bg-white pb-32 md:w-[385px] rounded-lg relative">
+    <div className="container mx-auto px-4 lg:px-16 2xl:px-32">
+      <div className="bg-white pb-32 md:w-[385px] rounded-lg relative mx-auto">
         {/* Video Thumbnail */}
         <Link href={videoUrl} target="_blank">
-          <div>
+          <div className="relative">
             <Image
-              className="md:w-[385px] w-full"
+              className="w-full rounded-t-lg"
               src={thumbnail}
-              width={385}
+              width={500}
               height={441}
               alt={`${title} thumbnail`}
             />
@@ -43,8 +43,8 @@ const Video: React.FC<VideoProps> = ({
           <div className="flex space-x-3">
             <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
               <div>
-                <p className="text-center">Views</p>
-                <p className="text-center font-bold">
+                <p className="text-center text-sm 2xl:text-base">Views</p>
+                <p className="text-center font-bold text-sm 2xl:text-lg">
                   {views}
                   {unitOfViews}
                 </p>
@@ -52,8 +52,8 @@ const Video: React.FC<VideoProps> = ({
             </div>
             <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
               <div>
-                <p className="text-center">Likes</p>
-                <p className="text-center font-bold">
+                <p className="text-center text-sm 2xl:text-base">Likes</p>
+                <p className="text-center font-bold text-sm 2xl:text-lg">
                   {likes}
                   {unitOfLikes}
                 </p>
@@ -61,8 +61,8 @@ const Video: React.FC<VideoProps> = ({
             </div>
             <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
               <div>
-                <p className="text-center">Shares</p>
-                <p className="text-center font-bold">
+                <p className="text-center text-sm 2xl:text-base">Shares</p>
+                <p className="text-center font-bold text-sm 2xl:text-lg">
                   {shares}
                   {unitOfShares}
                 </p>

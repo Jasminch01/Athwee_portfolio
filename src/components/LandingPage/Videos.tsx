@@ -47,11 +47,15 @@ const Videos = () => {
                   spaceBetween: 20,
                 },
                 765: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
+                  slidesPerView: 1.9,
+                  spaceBetween: 50,
                 },
                 1000: {
-                  slidesPerView: 4.4,
+                  slidesPerView: 2.5,
+                  spaceBetween: 5,
+                },
+                1400: {
+                  slidesPerView: 4.5,
                   spaceBetween: 5,
                 },
               }}
@@ -67,7 +71,7 @@ const Videos = () => {
               {videos.map((video, index) => (
                 <SwiperSlide
                   key={video._id}
-                  className={index === 0 ? "xl:ml-[18rem]" : ""}
+                  className={index === 0 ? "2xl:ml-[12rem] xl:ml-[5rem]" : ""}
                 >
                   <Video
                     title={video.title}
