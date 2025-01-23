@@ -51,10 +51,10 @@ const Appbar = () => {
               </Link>
             </div>
             <div className="space-x-5 text-white hidden md:block">
-              <Link href={"#social"} className="hover:text-[#F19934] transition">Social</Link>
-              <Link href={"#videos"} className="hover:text-[#F19934] transition">Videos</Link>
-              <Link href={"#about"} className="hover:text-[#F19934] transition">About</Link>
-              <Link href={"#contact"} className="hover:text-[#F19934] transition">Let's connect</Link>
+              <Link href={"#social"} className="hover:text-[#F19934] transition uppercase">Social</Link>
+              <Link href={"#videos"} className="hover:text-[#F19934] transition uppercase">Videos</Link>
+              <Link href={"#about"} className="hover:text-[#F19934] transition uppercase">About</Link>
+              <Link href={"#contact"} className="hover:text-[#F19934] transition uppercase">Let's connect</Link>
             </div>
             {!isOpen ? (
               <CgMenuRight
@@ -75,18 +75,18 @@ const Appbar = () => {
               <div
                 data-aos="fade-right"
                 data-aos-duration="500"
-                className={`fixed inset-x-0 md:hidden top-[70px] bg-[#1C1C1C] z-50 py-5 transform transition-transform duration-700 ease-in-out ${
+                className={`fixed inset-x-0 md:hidden top-[70px] bg-[#1C1C1C] h-full z-50 py-5 transform transition-transform duration-700 ease-in-out ${
                   isOpen
                     ? "translate-y-0 opacity-100"
                     : "-translate-y-full opacity-0"
                 }`}
               >
-                <div className="flex justify-end mr-6 flex-col space-y-5">
-                  <nav className="space-y-5 flex flex-col text-right text-white">
-                    <Link href={"#social"} className="hover:text-[#F19934] transition">Social</Link>
-                    <Link href={"#videos"} className="hover:text-[#F19934] transition">Videos</Link>
-                    <Link href={"#about"} className="hover:text-[#F19934] transition">About</Link>
-                    <Link href={"#contact"} className="hover:text-[#F19934] transition">let's connect</Link>
+                <div className="flex-col space-y-5 mt-36">
+                  <nav className="space-y-5 flex flex-col text-center text-white">
+                    <Link href={"#social"} className="hover:text-[#F19934] transition text-2xl uppercase">Social</Link>
+                    <Link href={"#videos"} className="hover:text-[#F19934] transition text-2xl uppercase">Videos</Link>
+                    <Link href={"#about"} className="hover:text-[#F19934] transition text-2xl uppercase">About</Link>
+                    <Link href={"#contact"} className="hover:text-[#F19934] transition text-2xl uppercase">let's connect</Link>
                   </nav>
                 </div>
               </div>
