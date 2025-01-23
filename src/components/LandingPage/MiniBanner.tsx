@@ -13,22 +13,73 @@ const MiniBanner = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="bg-gradient-to-t from-[#232323] to-[#cb9d69] to-85% rounded-t-[4rem] md:h-[20rem] h-[15rem] relative">
+      <div className="bg-gradient-to-t from-[#232323] to-[#cb9d69] to-85% rounded-t-[4rem] md:h-[20rem] h-[20rem] relative">
         <Container>
-          <div className="">
-            <Link
-              href={"/"}
-              className="text-2xl font-bold uppercase text-white absolute bottom-10"
+          {/* Main Content */}
+          <div className="flex flex-col md:flex-row justify-between items-center absolute bottom-20 inset-x-0 mx-auto max-w-[1280px] px-6 mb-3 space-y-4 md:space-y-0">
+            {/* Logo Section */}
+            <div>
+              <Link
+                href={"/"}
+                className="text-2xl font-bold uppercase text-white"
+              >
+                Ath<span className="text-[#F19934]">wee.</span>
+              </Link>
+            </div>
+
+            {/* Navigation Links */}
+            <div
+              data-aos="fade-down"
+              data-aos-duration="300"
+              className="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-8 text-white text-sm md:text-base"
             >
-              Ath<span className=" text-[#F19934]">wee.</span>{" "}
-            </Link>
+              <Link
+                href={"#social"}
+                className="hover:text-[#F19934] transition"
+              >
+                Social
+              </Link>
+              <Link
+                href={"#feature"}
+                className="hover:text-[#F19934] transition"
+              >
+                Videos
+              </Link>
+              <Link href={"#about"} className="hover:text-[#F19934] transition">
+                About
+              </Link>
+              <Link
+                href={"#contact"}
+                className="hover:text-[#F19934] transition"
+              >
+                Let's connect
+              </Link>
+            </div>
+          </div>
+
+          {/* Horizontal Line and Copyright Section */}
+          <div
+            className="absolute inset-x-0 bottom-10 mx-auto max-w-[1280px] px-6"
+            data-aos="fade-down"
+            data-aos-duration="300"
+          >
+            {/* Horizontal Line */}
+            <hr className="border-t border-white" />
+
+            {/* Copyright Text */}
+            <p className="text-center text-white text-xs md:text-sm mt-3">
+              &copy; {new Date().getFullYear()} Athwee. All rights reserved.
+            </p>
           </div>
         </Container>
       </div>
 
       {/* Image Positioned in the Middle */}
-      <div className="absolute md:top-[40rem] top-[37rem] left-1/2 transform -translate-x-1/2 ">
-        <div className="bg-mini-banner flex items-end justify-end bg-cover bg-center md:w-[45rem] xl:w-[70rem] md:h-[25rem] w-[20rem] h-[13rem] rounded-3xl">
+      <div className="absolute md:top-[40rem] top-[35rem] left-1/2 transform -translate-x-1/2 ">
+        <div
+          data-aos="fade-up"
+          className="bg-mini-banner flex items-end justify-end bg-cover bg-center md:w-[45rem] xl:w-[70rem] md:h-[25rem] w-[20rem] h-[13rem] rounded-3xl"
+        >
           <div className="flex justify-end md:mr-20 md:mb-16 mb-10 items-center">
             <div className="pr-5">
               <p className="text-white text-xl md:text-5xl font-bold text-right">

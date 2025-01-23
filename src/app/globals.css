@@ -33,3 +33,7 @@
   opacity: 1;
   transform: scale(1.3); /* Slightly larger active bullet */
 }
+
+html {
+  scroll-behavior: smooth;
+}

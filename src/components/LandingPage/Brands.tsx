@@ -143,8 +143,14 @@ const Brands = () => {
   return (
     <div>
       <div className="text-white text-center">
-        <p className="text-3xl">Collaborate with</p>
-        <p className="text-5xl font-bold mt-5">
+        <p
+          className="text-3xl"
+        >
+          Collaborate with
+        </p>
+        <p
+          className="text-5xl font-bold mt-5"
+        >
           some of the world's top brands.
         </p>
         <div className="py-20">

@@ -1,4 +1,5 @@
 import Appbar from "@/components/Appbar";
+import Footer from "@/components/Footer";
 import About from "@/components/LandingPage/About";
 import Hero from "@/components/LandingPage/Hero";
 import LatestVideos from "@/components/LandingPage/LatestVideos";
@@ -16,6 +17,7 @@ export default function Home() {
       <LatestVideos />
       <About/>
       <MiniBanner/>
+      <Footer/>
     </div>
   );
 }

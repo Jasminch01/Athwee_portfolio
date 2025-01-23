@@ -51,8 +51,18 @@ const Testimonials = () => {
   return (
     <div className="pt-20 pb-36">
       <div className="text-white text-center mb-20">
-        <p className=" text-4xl font-bold">Voices of Impact</p>
-        <p className={`text-lg ${saira.className} mt-5`}>
+        <p
+          className=" text-4xl font-bold"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          Voices of Impact
+        </p>
+        <p
+          data-aos="fade-up-right"
+          data-aos-duration="500"
+          className={`text-lg ${saira.className} mt-5`}
+        >
           Hear What the World Says About Creative Brilliance
         </p>
       </div>
@@ -80,7 +90,11 @@ const Testimonials = () => {
             key={index}
             className={index === 0 ? "2xl:ml-[20rem] xl:ml-[5rem]" : ""}
           >
-            <div className="bg-gray-300 rounded-xl shadow-lg p-6 flex flex-col items-center h-[350px]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              className="bg-gray-300 rounded-xl shadow-lg p-6 flex flex-col items-center h-[350px]"
+            >
               <img
                 src={testimonial.image}
                 alt={`${testimonial.name}`}

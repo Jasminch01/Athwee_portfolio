@@ -52,7 +52,7 @@ const Appbar = () => {
             </div>
             <div className="space-x-5 text-white hidden md:block">
               <Link href={"#social"}>Social</Link>
-              <Link href={"#feature"}>Videos</Link>
+              <Link href={"#videos"}>Videos</Link>
               <Link href={"#about"}>About</Link>
               <Link href={"#contact"}>Let's connect</Link>
             </div>
@@ -83,8 +83,8 @@ const Appbar = () => {
               >
                 <div className="flex justify-end mr-6 flex-col space-y-5">
                   <nav className="space-y-5 flex flex-col text-right text-white">
-                    <Link href={"#feature"}>Social</Link>
-                    <Link href={"#feature"}>Videos</Link>
+                    <Link href={"#social"}>Social</Link>
+                    <Link href={"#videos"}>Videos</Link>
                     <Link href={"#about"}>About</Link>
                     <Link href={"#contact"}>let's connect</Link>
                   </nav>

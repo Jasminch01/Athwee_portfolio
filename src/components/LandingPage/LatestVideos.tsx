@@ -6,15 +6,23 @@ import Testimonials from "./Testimonials";
 
 const LatestVideos = () => {
   return (
-    <div className="bg-[#1C1C1C]">
+    <div className="bg-[#1C1C1C]" id="videos">
       <Container>
         <div className="py-20">
           <div>
-            <p className="font-bold text-3xl text-center text-white">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="500"
+              className="font-bold text-3xl text-center text-white"
+            >
               Watch my latest videos
             </p>
           </div>
-          <div className="flex md:flex-row flex-col md:space-x-5 mt-20">
+          <div
+            className="flex md:flex-row flex-col md:space-x-5 mt-20"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <div className="bg-[#2E2E2E] pb-10 rounded relative">
               <Link href={"https://www.youtube.com/watch?v=SVXtyh8M_8w&t=1s"}>
                 <div className="rounded relative">

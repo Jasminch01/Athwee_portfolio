@@ -18,24 +18,44 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row xl:pt-72 pt-32 justify-between xl:h-screen">
           <div className="mt-10">
             <div className="">
-              <div className="text-white text-xl flex items-center mb-10">
+              <div
+                data-aos="fade-down"
+                data-aos-duration="500"
+                className="text-white text-xl flex items-center mb-10"
+              >
                 <MdOutlineHorizontalRule className="text-[#F19934]" />{" "}
                 <p className={`${saira.className} text-2xl`}> HELLO</p>
               </div>
-              <p className="text-5xl md:text-6xl xl:w-[40rem] font-bold text-white">
+              <p
+                data-aos="fade-up-right"
+                data-aos-duration="500"
+                className="text-5xl md:text-6xl xl:w-[40rem] font-bold text-white"
+              >
                 I’m <span className="text-[#F19934]">Athwee </span>Marma
               </p>
-              <p className={`text-white md:w-[30rem] mt-3 ${saira.className}`}>
+              <p
+                data-aos="fade-up-left"
+                data-aos-duration="500"
+                className={`text-white md:w-[30rem] mt-3 ${saira.className}`}
+              >
                 A content creator, I promote good things & spread <br />
                 positivity
               </p>
             </div>
             <div>
-              <button className="py-3 px-5 mt-5 bg-[#F19934] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white">
+              <button
+                data-aos="fade-up"
+                data-aos-duration="500"
+                className="py-3 px-5 mt-5 bg-[#F19934] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white"
+              >
                 Let's collaborate
               </button>
             </div>
-            <div className="flex space-x-4 mt-10 md:py-[13rem] pb-[14rem]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              className="flex space-x-4 mt-10 md:py-[13rem] pb-[14rem]"
+            >
               <Link href={"https://www.instagram.com/athwee_marma/#"}>
                 <FaInstagram className="text-white  cursor-pointer" />
               </Link>
@@ -58,7 +78,11 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative w-full mt-32 md:mt-0">
+          <div
+            className="relative w-full mt-32 md:mt-0"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             {/* Circle Background */}
             <div
               className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[250px] xl:w-[400px] lg:h-[300px] lg:w-[350px] rounded-t-full absolute z-0 

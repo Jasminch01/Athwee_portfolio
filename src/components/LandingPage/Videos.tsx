@@ -34,12 +34,22 @@ const Videos = () => {
     <div>
       <div className="py-10 bg-[#2D261D]">
         <div className="text-center text-white">
-          <p className="text-3xl font-bold">The perfect formula to go viral</p>
-          <p className={`mt-3 ${saira.className}`}>
+          <p
+            className="text-3xl font-bold"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            The perfect formula to go viral
+          </p>
+          <p
+            className={`mt-3 ${saira.className}`}
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             Unlock the Secrets to Captivating Content and Skyrocketing
             Engagement!
           </p>
-          <div className="mt-16">
+          <div className="mt-16" data-aos="fade-up" data-aos-duration="500">
             <Swiper
               breakpoints={{
                 0: {
@@ -65,9 +75,9 @@ const Videos = () => {
                   `<span class="${className} custom-bullet"></span>`,
               }}
               freeMode={true}
-              modules={[FreeMode, Pagination,]}
+              modules={[FreeMode, Pagination]}
               allowTouchMove={true}
-              mousewheel = {true}
+              mousewheel={true}
             >
               {videos.map((video, index) => (
                 <SwiperSlide
