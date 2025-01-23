@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../Container";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
+import {FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Saira } from "next/font/google";
 const saira = Saira({
@@ -27,7 +27,7 @@ const About = () => {
               About Me
             </p>
             <Image
-              data-aos="zoom-out-up"
+              data-aos="fade-up"
               data-aos-duration="500"
               className="w-[600px]"
               alt="athwee-about-image"

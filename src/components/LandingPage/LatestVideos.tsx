@@ -19,7 +19,7 @@ const LatestVideos = () => {
             </p>
           </div>
           <div
-            className="flex md:flex-row flex-col md:space-x-5 space-y-10 mt-20"
+            className="flex md:flex-row flex-col md:space-x-5 space-y-10 md:space-y-0 mt-20"
             data-aos="fade-up"
             data-aos-duration="500"
           >

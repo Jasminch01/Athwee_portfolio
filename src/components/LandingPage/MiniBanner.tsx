@@ -13,12 +13,14 @@ const MiniBanner = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="bg-gradient-to-t from-[#232323] to-[#cb9d69] to-85% rounded-t-[4rem] md:h-[20rem] h-[20rem] relative">
+      <div className="bg-footer-bg rounded-t-[4rem] md:h-[20rem] h-[20rem] relative">
         <Container>
           {/* Main Content */}
           <div className="flex flex-col md:flex-row justify-between items-center absolute bottom-20 inset-x-0 mx-auto max-w-[1280px] px-6 mb-3 space-y-4 md:space-y-0">
             {/* Logo Section */}
-            <div data-aos="fade-down" data-aos-duration="300">
+            <div 
+            data-aos="fade-down" data-aos-duration="300"
+            >
               <Link
                 href={"/"}
                 className="text-2xl font-bold uppercase text-white"

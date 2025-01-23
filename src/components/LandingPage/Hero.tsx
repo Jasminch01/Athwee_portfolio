@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../Container";
 import Image from "next/image";
 import { MdOutlineHorizontalRule } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { Saira } from "next/font/google";
@@ -34,7 +34,7 @@ const Hero = () => {
                 I’m <span className="text-[#F19934]">Athwee </span>Marma
               </p>
               <p
-                data-aos="fade-up-left"
+                data-aos="fade-up-right"
                 data-aos-duration="500"
                 className={`text-white md:w-[30rem] mt-3 ${saira.className}`}
               >
@@ -85,7 +85,7 @@ const Hero = () => {
           >
             {/* Circle Background */}
             <div
-              className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[280px] xl:w-[500px] lg:h-[300px] lg:w-[350px] rounded-t-full absolute z-0 
+              className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[250px] xl:w-[400px] lg:h-[300px] lg:w-[350px] rounded-t-full absolute z-0 
                right-4 bottom-4 md:right-[5rem] md:bottom-10 blur-3xl overflow-hidden"
             ></div>
 
@@ -95,7 +95,7 @@ const Hero = () => {
                 alt="athwee-image"
                 width={700}
                 height={700}
-                className="transition-all duration-300 hover:grayscale md:w-[600px]"
+                className="transition-all duration-300 hover:grayscale md:w-[500px]"
                 src="/ath.png"
               />
             </div>

@@ -18,7 +18,7 @@ const Social = () => {
             >
               <div
                 className=""
-                data-aos="fade-up-right"
+                data-aos="fade-up"
                 data-aos-duration="500"
               >
                 <p className="font-bold md:text-5xl text-3xl">
@@ -32,7 +32,9 @@ const Social = () => {
                 </button>
               </div>
             </div>
-            <div data-aos="fade-up-right" data-aos-duration="500">
+            <div 
+            data-aos="fade-up" data-aos-duration="500"
+            >
               <Image
                 src={"/light-bg.png"}
                 width={500}
