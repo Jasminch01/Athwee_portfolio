@@ -14,20 +14,17 @@ const Video: React.FC<VideoProps> = ({
   unitOfShares,
   unitOfViews,
 }) => {
-  
   return (
-    <div
-      className="container mx-auto px-4 lg:px-16 2xl:px-32"
-    >
-      <div className="bg-white pb-32 md:w-[385px] rounded-lg relative mx-auto">
+    <div className="container mx-auto px-4 lg:px-16 2xl:px-32">
+      <div className="bg-white pb-32 md:w-[385px] h-[550px] rounded-lg relative mx-auto">
         {/* Video Thumbnail */}
         <Link href={videoUrl} target="_blank">
-          <div className="relative">
+          <div className="relative h-[400px] w-full">
             <Image
-              className="w-full rounded-t-lg"
+              className="w-full h-full rounded-t-lg object-cover"
               src={thumbnail}
               width={500}
-              height={441}
+              height={400}
               alt={`${title} thumbnail`}
             />
 

@@ -51,10 +51,10 @@ const Appbar = () => {
               </Link>
             </div>
             <div className="space-x-5 text-white hidden md:block">
-              <Link href={"#social"}>Social</Link>
-              <Link href={"#videos"}>Videos</Link>
-              <Link href={"#about"}>About</Link>
-              <Link href={"#contact"}>Let's connect</Link>
+              <Link href={"#social"} className="hover:text-[#F19934] transition">Social</Link>
+              <Link href={"#videos"} className="hover:text-[#F19934] transition">Videos</Link>
+              <Link href={"#about"} className="hover:text-[#F19934] transition">About</Link>
+              <Link href={"#contact"} className="hover:text-[#F19934] transition">Let's connect</Link>
             </div>
             {!isOpen ? (
               <CgMenuRight
@@ -83,10 +83,10 @@ const Appbar = () => {
               >
                 <div className="flex justify-end mr-6 flex-col space-y-5">
                   <nav className="space-y-5 flex flex-col text-right text-white">
-                    <Link href={"#social"}>Social</Link>
-                    <Link href={"#videos"}>Videos</Link>
-                    <Link href={"#about"}>About</Link>
-                    <Link href={"#contact"}>let's connect</Link>
+                    <Link href={"#social"} className="hover:text-[#F19934] transition">Social</Link>
+                    <Link href={"#videos"} className="hover:text-[#F19934] transition">Videos</Link>
+                    <Link href={"#about"} className="hover:text-[#F19934] transition">About</Link>
+                    <Link href={"#contact"} className="hover:text-[#F19934] transition">let's connect</Link>
                   </nav>
                 </div>
               </div>
