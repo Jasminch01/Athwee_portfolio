@@ -16,7 +16,11 @@ const Social = () => {
               className="
             flex items-center justify-center"
             >
-              <div className="" data-aos="fade-up-right" data-aos-duration="500">
+              <div
+                className=""
+                data-aos="fade-up-right"
+                data-aos-duration="500"
+              >
                 <p className="font-bold md:text-5xl text-3xl">
                   EXPLODE <br /> YOUR SOCIALS
                 </p>
@@ -28,8 +32,7 @@ const Social = () => {
                 </button>
               </div>
             </div>
-            <div data-aos="fade-up-left"
-                data-aos-duration="500">
+            <div data-aos="fade-up-right" data-aos-duration="500">
               <Image
                 src={"/light-bg.png"}
                 width={500}

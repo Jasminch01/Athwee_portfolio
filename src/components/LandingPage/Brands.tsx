@@ -143,13 +143,13 @@ const Brands = () => {
   return (
     <div>
       <div className="text-white text-center">
-        <p
-          className="text-3xl"
-        >
+        <p className="text-3xl" data-aos="fade-down" data-aos-duration="300">
           Collaborate with
         </p>
         <p
           className="text-5xl font-bold mt-5"
+          data-aos="fade-down"
+          data-aos-duration="300"
         >
           some of the world's top brands.
         </p>

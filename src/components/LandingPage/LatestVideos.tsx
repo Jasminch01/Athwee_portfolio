@@ -19,7 +19,7 @@ const LatestVideos = () => {
             </p>
           </div>
           <div
-            className="flex md:flex-row flex-col md:space-x-5 mt-20"
+            className="flex md:flex-row flex-col md:space-x-5 space-y-10 mt-20"
             data-aos="fade-up"
             data-aos-duration="500"
           >
@@ -32,7 +32,7 @@ const LatestVideos = () => {
                     width={500}
                     height={500}
                     alt="video-thumb"
-                    className="rounded"
+                    className="rounded w-full"
                   />
 
                   {/* Play Button */}
@@ -60,7 +60,7 @@ const LatestVideos = () => {
                     width={500}
                     height={500}
                     alt="video-thumb"
-                    className="rounded"
+                    className="rounded w-full"
                   />
 
                   {/* Play Button */}
@@ -86,7 +86,7 @@ const LatestVideos = () => {
                     width={500}
                     height={500}
                     alt="video-thumb"
-                    className="rounded"
+                    className="rounded w-full"
                   />
 
                   {/* Play Button */}

@@ -41,7 +41,7 @@ const About = () => {
           >
             <p
               className="md:text-lg font-saira text-justify"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="500"
             >
               A passionate content creator known for my engaging and relatable
@@ -52,7 +52,7 @@ const About = () => {
             </p>
             <p
               className="md:text-lg text-justify"
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-duration="500"
             >
               My dedication to delivering quality content shines through. With a

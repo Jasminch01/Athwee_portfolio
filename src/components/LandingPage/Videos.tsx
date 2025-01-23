@@ -29,7 +29,24 @@ const Videos = () => {
 
     fetchVideos();
   }, []);
-  console.log(videos);
+
+  // Add a default empty video object at the end
+  const videosWithDefault = [
+    ...videos,
+    {
+      _id: "default",
+      title: "",
+      thumbnailUrl: "",
+      views: 0,
+      unitOfViews: "",
+      likes: 0,
+      unitOfLikes: "",
+      videoUrl: "",
+      shares: 0,
+      unitOfShares: "",
+    },
+  ];
+
   return (
     <div>
       <div className="py-10 bg-[#2D261D]">
@@ -49,11 +66,13 @@ const Videos = () => {
             Unlock the Secrets to Captivating Content and Skyrocketing
             Engagement!
           </p>
-          <div className="mt-16" data-aos="fade-up" data-aos-duration="500">
+          <div className="mt-16"
+           data-aos="fade-up" data-aos-duration="500"
+           >
             <Swiper
               breakpoints={{
                 0: {
-                  slidesPerView: 1.5,
+                  slidesPerView: 1,
                   spaceBetween: 20,
                 },
                 765: {
@@ -79,22 +98,30 @@ const Videos = () => {
               allowTouchMove={true}
               mousewheel={true}
             >
-              {videos.map((video, index) => (
+              {videosWithDefault.map((video, index) => (
                 <SwiperSlide
                   key={video._id}
-                  className={index === 0 ? "2xl:ml-[12rem] xl:ml-[5rem]" : ""}
+                  className={
+                    index === 0
+                      ? "lg:ml-[5rem] 2xl:ml-[10rem]"
+                      : ""
+                  }
                 >
-                  <Video
-                    title={video.title}
-                    thumbnail={video.thumbnailUrl}
-                    views={video.views}
-                    unitOfViews={video.unitOfViews}
-                    likes={video.likes}
-                    unitOfLikes={video.unitOfLikes}
-                    videoUrl={video.videoUrl}
-                    shares={video.shares}
-                    unitOfShares={video.unitOfShares}
-                  />
+                  {video.title ? (
+                    <Video
+                      title={video.title}
+                      thumbnail={video.thumbnailUrl}
+                      views={video.views}
+                      unitOfViews={video.unitOfViews}
+                      likes={video.likes}
+                      unitOfLikes={video.unitOfLikes}
+                      videoUrl={video.videoUrl}
+                      shares={video.shares}
+                      unitOfShares={video.unitOfShares}
+                    />
+                  ) : (
+                    <div className="h-full w-full"></div>
+                  )}
                 </SwiperSlide>
               ))}
               <div className="md:h-20 h-10"></div>

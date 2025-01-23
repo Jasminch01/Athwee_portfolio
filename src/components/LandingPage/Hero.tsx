@@ -27,7 +27,7 @@ const Hero = () => {
                 <p className={`${saira.className} text-2xl`}> HELLO</p>
               </div>
               <p
-                data-aos="fade-up-right"
+                data-aos="fade-up-left"
                 data-aos-duration="500"
                 className="text-5xl md:text-6xl xl:w-[40rem] font-bold text-white"
               >
@@ -85,7 +85,7 @@ const Hero = () => {
           >
             {/* Circle Background */}
             <div
-              className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[250px] xl:w-[400px] lg:h-[300px] lg:w-[350px] rounded-t-full absolute z-0 
+              className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[280px] xl:w-[500px] lg:h-[300px] lg:w-[350px] rounded-t-full absolute z-0 
                right-4 bottom-4 md:right-[5rem] md:bottom-10 blur-3xl overflow-hidden"
             ></div>
 
@@ -95,7 +95,7 @@ const Hero = () => {
                 alt="athwee-image"
                 width={700}
                 height={700}
-                className="transition-all duration-300 hover:grayscale md:w-[500px]"
+                className="transition-all duration-300 hover:grayscale md:w-[600px]"
                 src="/ath.png"
               />
             </div>

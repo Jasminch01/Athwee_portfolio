@@ -18,7 +18,7 @@ const MiniBanner = () => {
           {/* Main Content */}
           <div className="flex flex-col md:flex-row justify-between items-center absolute bottom-20 inset-x-0 mx-auto max-w-[1280px] px-6 mb-3 space-y-4 md:space-y-0">
             {/* Logo Section */}
-            <div>
+            <div data-aos="fade-down" data-aos-duration="300">
               <Link
                 href={"/"}
                 className="text-2xl font-bold uppercase text-white"
@@ -58,11 +58,7 @@ const MiniBanner = () => {
           </div>
 
           {/* Horizontal Line and Copyright Section */}
-          <div
-            className="absolute inset-x-0 bottom-10 mx-auto max-w-[1280px] px-6"
-            data-aos="fade-down"
-            data-aos-duration="300"
-          >
+          <div className="absolute inset-x-0 bottom-10 mx-auto max-w-[1280px] px-6">
             {/* Horizontal Line */}
             <hr className="border-t border-white" />
 

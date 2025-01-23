@@ -14,7 +14,7 @@ const Video: React.FC<VideoProps> = ({
   unitOfShares,
   unitOfViews,
 }) => {
-  console.log(unitOfLikes);
+  
   return (
     <div
       className="container mx-auto px-4 lg:px-16 2xl:px-32"

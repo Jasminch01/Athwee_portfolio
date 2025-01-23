@@ -12,39 +12,38 @@ const saira = Saira({
 });
 const testimonials = [
   {
-    name: "John Doe",
-    title: "Content Creator",
+    name: " Mila Hossain",
+    title: " Content Enthusiast",
     feedback:
-      "Athwee's content is truly inspiring! Every post resonates with creativity and passion.",
+      "A true inspiration for many! Athwee's content is not only entertaining but also deeply insightful. Her passion and authenticity shine through every video, making her a role model for aspiring creators",
     image: "/test.png",
   },
   {
-    name: "Jane Smith",
-    title: "Digital Marketer",
+    name: "Zara Khan",
+    title: " Marketing Specialist",
     feedback:
-      "Athwee's strategies for going viral are unmatched. They’ve helped me grow my engagement tenfold!",
+      "Every piece of Athwee's work reflects her creativity and dedication. She continues to set the bar higher, inspiring everyone around her",
     image: "/test1.png",
   },
   {
-    name: "Ali Khan",
-    title: "Entrepreneur",
+    name: " Rafiq Ahmed",
+    title: "Loyal Follower",
     feedback:
-      "Athwee brings a fresh perspective to content creation. Their tips are practical and effective.",
+      "Athwee has the rare ability to create content that resonates. Her storytelling and genuine approach have made her a favorite in our family.",
     image: "/test2.png",
   },
   {
-    name: "Ali Khan",
-    title: "Entrepreneur",
+    name: "Hassan Rahman",
+    title: "Media Consultant",
     feedback:
-      "Athwee brings a fresh perspective to content creation. Their tips are practical and effective.",
-    image: "/test.png",
+      "Athwee's inspiring journey and heartfelt content remind us of the power of positivity and determination. He is truly one of a kind.",
+    image: "/test2.png",
   },
   {
-    name: "Ali Khan",
-    title: "Entrepreneur",
-    feedback:
-      "Athwee brings a fresh perspective to content creation. Their tips are practical and effective.",
-    image: "/test.png",
+    name: "",
+    title: "",
+    feedback: "",
+    image: "/test2.png",
   },
 ];
 const Testimonials = () => {
@@ -70,7 +69,7 @@ const Testimonials = () => {
         className="mt-10"
         breakpoints={{
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           765: {
@@ -90,26 +89,47 @@ const Testimonials = () => {
             key={index}
             className={index === 0 ? "2xl:ml-[20rem] xl:ml-[5rem]" : ""}
           >
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              className="bg-gray-300 rounded-xl shadow-lg p-6 flex flex-col items-center h-[350px]"
-            >
-              <img
-                src={testimonial.image}
-                alt={`${testimonial.name}`}
-                className="w-20 h-20 rounded-full object-cover mb-4"
-              />
-              <div className="flex-grow flex flex-col justify-between text-center">
-                <div>
-                  <h3 className="text-xl font-semibold">{testimonial.name}</h3>
-                  <p className="text-lg">{testimonial.title}</p>
-                  <p className="mt-4 text-xl text-gray-700 overflow-hidden text-ellipsis">
-                    {testimonial.feedback}
-                  </p>
+            {index === testimonials.length - 1 ? (
+              // For the last slide, render an empty slide
+              <div className="h-[350px] bg-transparent"></div>
+            ) : (
+              // Normal slide content
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                className="bg-[#2E2E2E] rounded-xl shadow-lg p-6 flex flex-col items-center h-[350px]"
+              >
+                <img
+                  src={testimonial.image}
+                  alt={`${testimonial.name}`}
+                  className="w-20 h-20 rounded-full object-cover mb-4"
+                />
+                <div className="flex-grow flex flex-col justify-between text-center">
+                  <div>
+                    {/* Feedback Text with Styled Quotes */}
+                    <p
+                      className={`mt-4 relative text-white ${saira.className}`}
+                    >
+                      <span className="text-[#F19934] text-4xl">&ldquo;</span>
+                      {testimonial.feedback}
+                      <span className="text-[#F19934] absolute -bottom-7 text-4xl">
+                        &rdquo;
+                      </span>
+                    </p>
+
+                    {/* Name and Title */}
+                    <div className="text-white mt-4">
+                      <h3 className="text-2xl font-bold text-[#F19934]">
+                        {testimonial.name}
+                      </h3>
+                      <p className={`text-sm font-light ${saira.className}`}>
+                        {testimonial.title}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>
