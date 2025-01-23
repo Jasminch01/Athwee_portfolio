@@ -72,7 +72,7 @@ const Videos = () => {
             <Swiper
               breakpoints={{
                 0: {
-                  slidesPerView: 1,
+                  slidesPerView: 1.2,
                   spaceBetween: 20,
                 },
                 765: {
@@ -103,7 +103,7 @@ const Videos = () => {
                   key={video._id}
                   className={
                     index === 0
-                      ? "lg:ml-[5rem] 2xl:ml-[10rem]"
+                      ? "lg:ml-0 2xl:ml-[10rem]"
                       : ""
                   }
                 >
