@@ -56,7 +56,7 @@ const Videos = () => {
             data-aos="fade-up"
             data-aos-duration="500"
           >
-            The perfect formula to go viral
+            The Perfect Formula to Go Viral
           </p>
           <p
             className={`mt-3 ${saira.className}`}
@@ -66,9 +66,7 @@ const Videos = () => {
             Unlock the Secrets to Captivating Content and Skyrocketing
             Engagement!
           </p>
-          <div className="mt-16"
-           data-aos="fade-up" data-aos-duration="500"
-           >
+          <div className="mt-16" data-aos="fade-up" data-aos-duration="500">
             <Swiper
               breakpoints={{
                 0: {
@@ -84,8 +82,12 @@ const Videos = () => {
                   spaceBetween: 5,
                 },
                 1400: {
+                  slidesPerView: 3.5,
+                  spaceBetween: 50,
+                },
+                1500: {
                   slidesPerView: 4.5,
-                  spaceBetween: 5,
+                  spaceBetween: 50,
                 },
               }}
               pagination={{
@@ -101,11 +103,7 @@ const Videos = () => {
               {videosWithDefault.map((video, index) => (
                 <SwiperSlide
                   key={video._id}
-                  className={
-                    index === 0
-                      ? "lg:ml-0 2xl:ml-[10rem]"
-                      : ""
-                  }
+                  className={index === 0 ? "lg:ml-0 2xl:ml-[10rem]" : ""}
                 >
                   {video.title ? (
                     <Video

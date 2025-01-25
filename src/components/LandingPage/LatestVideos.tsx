@@ -15,7 +15,7 @@ const LatestVideos = () => {
               data-aos-duration="500"
               className="font-bold text-3xl text-center text-white"
             >
-              Watch my latest videos
+              Watch My Latest Videos
             </p>
           </div>
           <div
@@ -74,7 +74,7 @@ const LatestVideos = () => {
 
               {/* Caption */}
               <div className="text-center mt-10">
-                <p className="text-white">What I envision for my people</p>
+                <p className="text-white">What I Envision for My People</p>
               </div>
             </div>
             <div className="bg-[#2E2E2E] pb-10 rounded relative">
@@ -100,7 +100,7 @@ const LatestVideos = () => {
               {/* Caption */}
               <div className="text-center mt-10">
                 <p className="text-white">
-                  I raised 2.5 lakhs and helped 300 families
+                  I Raised 2.5 Lakhs and Helped 300 Families
                 </p>
               </div>
             </div>

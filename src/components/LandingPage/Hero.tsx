@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../Container";
 import Image from "next/image";
 import { MdOutlineHorizontalRule } from "react-icons/md";
-import { FaFacebook, FaInstagram} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { Saira } from "next/font/google";
@@ -36,7 +36,7 @@ const Hero = () => {
               <p
                 data-aos="fade-up-right"
                 data-aos-duration="500"
-                className={`text-white md:w-[30rem] mt-3 ${saira.className}`}
+                className={`text-white 2xl:w-[30rem] mt-3 ${saira.className}`}
               >
                 A content creator, I promote good things & spread <br />
                 positivity
@@ -48,13 +48,13 @@ const Hero = () => {
                 data-aos-duration="500"
                 className="py-3 px-5 mt-5 bg-[#F19934] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white"
               >
-                Let's collaborate
+                Let's Collaborate
               </button>
             </div>
             <div
               data-aos="fade-up"
               data-aos-duration="500"
-              className="flex space-x-4 mt-10 md:py-[13rem] pb-[14rem]"
+              className="flex space-x-4 mt-10 2xl:py-[13rem] pb-[14rem]"
             >
               <Link href={"https://www.instagram.com/athwee_marma/#"}>
                 <FaInstagram className="text-white  cursor-pointer" />
@@ -85,7 +85,7 @@ const Hero = () => {
           >
             {/* Circle Background */}
             <div
-              className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[250px] xl:w-[400px] lg:h-[300px] lg:w-[350px] rounded-t-full absolute z-0 
+              className="bg-[#b27f44] h-[200px] w-[250px] xl:h-[250px] xl:w-[400px] lg:h-[300px] lg:w-[350px] 2xl:w-[550px] 2xl:h-[300px] rounded-t-full absolute z-0 
                right-4 bottom-4 md:right-[5rem] md:bottom-10 blur-3xl overflow-hidden"
             ></div>
 
@@ -95,7 +95,7 @@ const Hero = () => {
                 alt="athwee-image"
                 width={700}
                 height={700}
-                className="transition-all duration-300 hover:grayscale md:w-[500px]"
+                className="transition-all duration-300 hover:grayscale md:w-[400px] lg:w-[500px] 2xl:w-[600rem]"
                 src="/ath.png"
               />
             </div>
