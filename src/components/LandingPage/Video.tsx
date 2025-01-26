@@ -15,7 +15,7 @@ const Video: React.FC<VideoProps> = ({
   unitOfViews,
 }) => {
   return (
-    <div className="container mx-auto px-4 lg:px-16 2xl:px-32">
+    <div className="px-4 lg:px-16 2xl:px-32">
       <div className="bg-white pb-32 md:w-[385px] h-[550px] rounded-lg relative mx-auto">
         {/* Video Thumbnail */}
         <Link href={videoUrl} target="_blank">

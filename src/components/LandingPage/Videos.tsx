@@ -66,7 +66,11 @@ const Videos = () => {
             Unlock the Secrets to Captivating Content and Skyrocketing
             Engagement!
           </p>
-          <div className="mt-16" data-aos="fade-up" data-aos-duration="500">
+          <div
+            className="mt-16 overflow-clip"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <Swiper
               breakpoints={{
                 0: {
