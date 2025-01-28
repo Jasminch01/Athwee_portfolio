@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Mousewheel } from "swiper/modules";
+import { FreeMode, Autoplay, EffectCoverflow} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
@@ -82,8 +82,8 @@ const Testimonials = () => {
               spaceBetween: 50,
             },
           }}
-          mousewheel={true}
-          modules={[FreeMode, Mousewheel]}
+          modules={[FreeMode, Autoplay, EffectCoverflow]}
+          autoplay = {true}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide
