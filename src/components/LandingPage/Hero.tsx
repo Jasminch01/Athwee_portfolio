@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div className=" bg-[#1C1C1C]">
       <Container>
-        <div className="flex flex-col lg:flex-row xl:pt-72 pt-32 justify-between xl:h-screen">
+        <div className="flex flex-col lg:flex-row xl:pt-72 pt-32 justify-between lg:h-screen">
           <div className="mt-10">
             <div className="">
               <div
