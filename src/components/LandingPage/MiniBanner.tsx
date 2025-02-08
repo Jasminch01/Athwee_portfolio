@@ -25,7 +25,7 @@ const MiniBanner = () => {
                 href={"/"}
                 className="text-2xl font-bold uppercase text-white"
               >
-                Ath<span className="text-[#F19934]">wee.</span>
+                Ath<span className="text-[#00C853]">wee.</span>
               </Link>
             </div>
 
@@ -37,22 +37,22 @@ const MiniBanner = () => {
             >
               <Link
                 href={"#social"}
-                className="hover:text-[#F19934] transition"
+                className="hover:text-[#00C853] transition"
               >
                 Social
               </Link>
               <Link
                 href={"#feature"}
-                className="hover:text-[#F19934] transition"
+                className="hover:text-[#00C853] transition"
               >
                 Videos
               </Link>
-              <Link href={"#about"} className="hover:text-[#F19934] transition">
+              <Link href={"#about"} className="hover:text-[#00C853] transition">
                 About
               </Link>
               <Link
                 href={"#contact"}
-                className="hover:text-[#F19934] transition"
+                className="hover:text-[#00C853] transition"
               >
                 Let's connect
               </Link>

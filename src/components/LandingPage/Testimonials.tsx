@@ -82,8 +82,7 @@ const Testimonials = () => {
               spaceBetween: 50,
             },
           }}
-          modules={[FreeMode, Autoplay, EffectCoverflow]}
-          autoplay = {true}
+          modules={[FreeMode, EffectCoverflow]}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide
@@ -112,16 +111,16 @@ const Testimonials = () => {
                       <p
                         className={`mt-4 relative text-white ${saira.className}`}
                       >
-                        <span className="text-[#F19934] text-4xl">&ldquo;</span>
+                        <span className="text-[#00C853] text-4xl">&ldquo;</span>
                         {testimonial.feedback}
-                        <span className="text-[#F19934] absolute -bottom-7 text-4xl">
+                        <span className="text-[#00C853] absolute -bottom-7 text-4xl">
                           &rdquo;
                         </span>
                       </p>
 
                       {/* Name and Title */}
                       <div className="text-white mt-4">
-                        <h3 className="text-2xl font-bold text-[#F19934]">
+                        <h3 className="text-2xl font-bold text-[#00C853]">
                           {testimonial.name}
                         </h3>
                         <p className={`text-sm font-light ${saira.className}`}>

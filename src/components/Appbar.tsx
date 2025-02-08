@@ -47,14 +47,14 @@ const Appbar = () => {
                 href={"/"}
                 className="text-2xl font-bold uppercase text-white"
               >
-                Ath<span className=" text-[#F19934]">wee.</span>{" "}
+                Ath<span className=" text-[#00C853]">wee.</span>{" "}
               </Link>
             </div>
             <div className="space-x-5 text-white hidden md:block">
-              <Link href={"#social"} className="hover:text-[#F19934] transition uppercase">Social</Link>
-              <Link href={"#videos"} className="hover:text-[#F19934] transition uppercase">Videos</Link>
-              <Link href={"#about"} className="hover:text-[#F19934] transition uppercase">About</Link>
-              <Link href={"#contact"} className="hover:text-[#F19934] transition uppercase">Let's connect</Link>
+              <Link href={"#social"} className="hover:text-[#00C853] transition uppercase">Social</Link>
+              <Link href={"#videos"} className="hover:text-[#00C853] transition uppercase">Videos</Link>
+              <Link href={"#about"} className="hover:text-[#00C853] transition uppercase">About</Link>
+              <Link href={"#contact"} className="hover:text-[#00C853] transition uppercase">Let's connect</Link>
             </div>
             {!isOpen ? (
               <CgMenuRight
@@ -83,10 +83,10 @@ const Appbar = () => {
               >
                 <div className="flex-col space-y-5 mt-36">
                   <nav className="space-y-5 flex flex-col text-center text-white">
-                    <Link href={"#social"} className="hover:text-[#F19934] transition text-2xl uppercase">Social</Link>
-                    <Link href={"#videos"} className="hover:text-[#F19934] transition text-2xl uppercase">Videos</Link>
-                    <Link href={"#about"} className="hover:text-[#F19934] transition text-2xl uppercase">About</Link>
-                    <Link href={"#contact"} className="hover:text-[#F19934] transition text-2xl uppercase">let's connect</Link>
+                    <Link href={"#social"} className="hover:text-[#00C853] transition text-2xl uppercase">Social</Link>
+                    <Link href={"#videos"} className="hover:text-[#00C853] transition text-2xl uppercase">Videos</Link>
+                    <Link href={"#about"} className="hover:text-[#00C853] transition text-2xl uppercase">About</Link>
+                    <Link href={"#contact"} className="hover:text-[#00C853] transition text-2xl uppercase">let's connect</Link>
                   </nav>
                 </div>
               </div>

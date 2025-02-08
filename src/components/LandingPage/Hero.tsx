@@ -23,7 +23,7 @@ const Hero = () => {
                 data-aos-duration="500"
                 className="text-white text-xl flex items-center mb-10"
               >
-                <MdOutlineHorizontalRule className="text-[#F19934]" />{" "}
+                <MdOutlineHorizontalRule className="text-[#00C853]" />{" "}
                 <p className={`${saira.className} text-2xl`}> HELLO</p>
               </div>
               <p
@@ -31,7 +31,7 @@ const Hero = () => {
                 data-aos-duration="500"
                 className="text-5xl md:text-6xl xl:w-[40rem] font-bold text-white"
               >
-                I’m <span className="text-[#F19934]">Athwee </span>Marma
+                I’m <span className="text-[#00C853]">Athwee </span>Marma
               </p>
               <p
                 data-aos="fade-up-right"
@@ -46,7 +46,7 @@ const Hero = () => {
               <button
                 data-aos="fade-up"
                 data-aos-duration="500"
-                className="py-3 px-5 mt-5 bg-[#F19934] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white"
+                className="py-3 px-5 mt-5 bg-[#00C853] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white"
               >
                 Let's Collaborate
               </button>
