@@ -11,6 +11,7 @@
   "dependencies": {
     "@sanity/desk-tool": "^2.36.2",
     "aos": "^3.0.0-beta.6",
+    "framer-motion": "^12.4.1",
     "next": "15.1.4",
     "next-sanity": "^9.8.39",
     "react": "^19.0.0",

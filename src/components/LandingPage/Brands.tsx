@@ -143,7 +143,7 @@ const Brands = () => {
   return (
     <div>
       <div className="text-white text-center">
-        <p className="text-3xl" data-aos="fade-down" data-aos-duration="300">
+        <p className="text-3xl text-[#00C853]" data-aos="fade-down" data-aos-duration="300">
           Collaborate with
         </p>
         <p

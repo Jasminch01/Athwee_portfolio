@@ -2,7 +2,6 @@ import { VideoProps } from "@/utils/type";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { CiPlay1 } from "react-icons/ci";
 import { FaPlay } from "react-icons/fa";
 
 const Video: React.FC<VideoProps> = ({
@@ -18,12 +17,12 @@ const Video: React.FC<VideoProps> = ({
 }) => {
   return (
     <div className="px-4 md:px-0">
-      <div className="bg-white p-4 rounded-2xl shadow-lg">
+      <div className="bg-white p-3 rounded-2xl shadow-lg">
         {/* Video Thumbnail */}
         <Link href={videoUrl} target="_blank">
           <div className="relative">
             <Image
-              className=" h-[23rem] rounded-xl object-cover"
+              className=" h-[23rem] rounded-2xl object-cover"
               src={thumbnail}
               width={500}
               height={400}

@@ -39,9 +39,9 @@ const About = () => {
             <p
               data-aos="fade-right"
               data-aos-duration="500"
-              className="font-bold xl:text-7xl md:text-4xl text-3xl text-center uppercase xl:absolute top-10 md:z-10 -right-[19rem] mb-5 xl:mb-0"
+              className="font-bold xl:text-7xl md:text-4xl text-3xl text-center uppercase xl:absolute top-10 md:z-10 -right-[18rem] mb-5 xl:mb-0"
             >
-              About Me
+             <span className="text-[#00C853]">Ab</span>out Me
             </p>
             <Image
               data-aos="fade-up"
@@ -50,7 +50,7 @@ const About = () => {
               alt="athwee-about-image"
               width={500}
               height={500}
-              src="/athwee_image.png"
+              src="/about-image.png"
             />
           </div>
           <div
@@ -72,7 +72,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center xl:justify-start space-x-4 mt-10">
+        <div className="flex justify-center items-center xl:justify-start space-x-4 mt-10">
           <Link href={"https://x.com/Athweemarma"}>
             <FaXTwitter className="text-lg" />
           </Link>
@@ -84,7 +84,7 @@ const About = () => {
             <FaLinkedin className="text-lg" />
           </Link>
           <Link href={"https://www.youtube.com/AthweeMarma"}>
-            <FaYoutube className="text-xl" />
+            <FaYoutube className="text-2xl" />
           </Link>
         </div>
       </Container>
