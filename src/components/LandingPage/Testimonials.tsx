@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Autoplay, EffectCoverflow} from "swiper/modules";
+import { FreeMode, EffectCoverflow, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
@@ -82,7 +82,8 @@ const Testimonials = () => {
               spaceBetween: 50,
             },
           }}
-          modules={[FreeMode, EffectCoverflow]}
+          modules={[FreeMode, EffectCoverflow, Pagination]}
+          pagination={{ clickable: true }}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide
@@ -133,6 +134,7 @@ const Testimonials = () => {
               )}
             </SwiperSlide>
           ))}
+          <div className="h-16"></div>
         </Swiper>
       </div>
     </div>
