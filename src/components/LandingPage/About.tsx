@@ -1,16 +1,33 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Image from "next/image";
 import Link from "next/link";
-import {FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Saira } from "next/font/google";
+import { getAboutContent } from "@/sanity/schemas/utlis";
 const saira = Saira({
   subsets: ["latin"],
   variable: "--font-saira",
 });
 
 const About = () => {
+  const [aboutContent, setAboutContent] = useState<string>("");
+
+  useEffect(() => {
+    const fetchAbout = async () => {
+      try {
+        const fetchedAbout = await getAboutContent();
+        setAboutContent(fetchedAbout[0].description);
+      } catch (error) {
+        console.error("Error fetching about content:", error);
+      }
+    };
+
+    fetchAbout();
+  }, []);
+
   return (
     <div className="md:pt-36 md:pb-20 py-10" id="about">
       <Container>
@@ -44,20 +61,14 @@ const About = () => {
               data-aos="fade-up"
               data-aos-duration="500"
             >
-              A passionate content creator known for my engaging and relatable
-              content. With a talent for storytelling and a knack for connecting
-              with my audience, I make videos and posts that inspire, entertain,
-              and educate. My dedication to quality and authenticity has helped
-              me carve a unique space in the digital landscape.
+              {aboutContent.slice(0, 315)}
             </p>
             <p
               className="md:text-lg text-justify"
               data-aos="fade-right"
               data-aos-duration="500"
             >
-              My dedication to delivering quality content shines through. With a
-              deep understanding of my audience's interests, I combine
-              creativity and humor in my videos.
+              {aboutContent.slice(315)}
             </p>
           </div>
         </div>

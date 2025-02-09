@@ -2,6 +2,8 @@ import { VideoProps } from "@/utils/type";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { CiPlay1 } from "react-icons/ci";
+import { FaPlay } from "react-icons/fa";
 
 const Video: React.FC<VideoProps> = ({
   title,
@@ -15,13 +17,13 @@ const Video: React.FC<VideoProps> = ({
   unitOfViews,
 }) => {
   return (
-    <div className="px-4 lg:px-16 2xl:px-32">
-      <div className="bg-white pb-32 md:w-[385px] h-[550px] rounded-lg relative mx-auto">
+    <div className="px-4 md:px-0">
+      <div className="bg-white p-4 rounded-2xl shadow-lg">
         {/* Video Thumbnail */}
         <Link href={videoUrl} target="_blank">
-          <div className="relative h-[400px] w-full">
+          <div className="relative">
             <Image
-              className="w-full h-full rounded-t-lg object-cover"
+              className=" h-[23rem] rounded-xl object-cover"
               src={thumbnail}
               width={500}
               height={400}
@@ -29,44 +31,36 @@ const Video: React.FC<VideoProps> = ({
             />
 
             {/* Play Button */}
-            <div className="absolute inset-0 flex justify-center items-center">
-              <button className="w-16 h-16 bg-white text-black rounded-full flex justify-center items-center shadow-lg transform transition-transform duration-300 hover:scale-105">
-                ▶
+            <div className="absolute -bottom-5 right-4">
+              <button className="size-16 bg-[#B9B7BB] text-black rounded-full flex justify-center items-center shadow-md">
+              <FaPlay color="white"/>
               </button>
             </div>
           </div>
         </Link>
 
         {/* Stats Section */}
-        <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
-          <div className="flex space-x-3">
-            <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
-              <div>
-                <p className="text-center text-sm 2xl:text-base">Views</p>
-                <p className="text-center font-bold text-sm 2xl:text-lg">
-                  {views}
-                  {unitOfViews}
-                </p>
-              </div>
-            </div>
-            <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
-              <div>
-                <p className="text-center text-sm 2xl:text-base">Likes</p>
-                <p className="text-center font-bold text-sm 2xl:text-lg">
-                  {likes}
-                  {unitOfLikes}
-                </p>
-              </div>
-            </div>
-            <div className="bg-slate-200 text-black rounded-xl md:w-[6rem] md:h-16 w-[4rem] h-[4rem] flex items-center justify-center">
-              <div>
-                <p className="text-center text-sm 2xl:text-base">Shares</p>
-                <p className="text-center font-bold text-sm 2xl:text-lg">
-                  {shares}
-                  {unitOfShares}
-                </p>
-              </div>
-            </div>
+        <div className="grid grid-cols-3 gap-3 mt-10 text-center">
+          <div className="bg-gray-100 text-black rounded-lg p-2">
+            <p className="text-xs font-semibold">Views</p>
+            <p className="text-sm font-bold">
+              {views}
+              {unitOfViews}
+            </p>
+          </div>
+          <div className="bg-gray-100 text-black rounded-lg p-2">
+            <p className="text-xs font-semibold">Likes</p>
+            <p className="text-sm font-bold">
+              {likes}
+              {unitOfLikes}
+            </p>
+          </div>
+          <div className="bg-gray-100 text-black rounded-lg p-2">
+            <p className="text-xs font-semibold">Share</p>
+            <p className="text-sm font-bold">
+              {shares}
+              {unitOfShares}
+            </p>
           </div>
         </div>
       </div>

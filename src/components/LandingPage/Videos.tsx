@@ -1,14 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Video from "./Video";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/swiper-bundle.css";
 import { getVideos } from "@/sanity/schemas/utlis";
 import { VideoType } from "@/utils/type";
 import { Saira } from "next/font/google";
+import Container from "../Container";
 const saira = Saira({
   subsets: ["latin"],
   variable: "--font-saira",
@@ -30,106 +26,38 @@ const Videos = () => {
     fetchVideos();
   }, []);
 
-  // Add a default empty video object at the end
-  const videosWithDefault = [
-    ...videos,
-    {
-      _id: "default",
-      title: "",
-      thumbnailUrl: "",
-      views: 0,
-      unitOfViews: "",
-      likes: 0,
-      unitOfLikes: "",
-      videoUrl: "",
-      shares: 0,
-      unitOfShares: "",
-    },
-  ];
-
   return (
     <div>
-      <div className="py-10 bg-[#2D261D]">
-        <div className="text-center text-white">
-          <p
-            className="text-3xl font-bold"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            The Perfect Formula to Go Viral
-          </p>
-          <p
-            className={`mt-3 ${saira.className}`}
-            data-aos="fade-right"
-            data-aos-duration="500"
-          >
-            Unlock the Secrets to Captivating Content and Skyrocketing
-            Engagement!
-          </p>
-          <div
-            className="mt-16 overflow-clip"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <Swiper
-              breakpoints={{
-                0: {
-                  slidesPerView: 1.2,
-                  spaceBetween: 20,
-                },
-                765: {
-                  slidesPerView: 1.9,
-                  spaceBetween: 50,
-                },
-                1000: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 5,
-                },
-                1400: {
-                  slidesPerView: 3.5,
-                  spaceBetween: 50,
-                },
-                1500: {
-                  slidesPerView: 4.5,
-                  spaceBetween: 50,
-                },
-              }}
-              pagination={{
-                clickable: true,
-                renderBullet: (index, className) =>
-                  `<span class="${className} custom-bullet"></span>`,
-              }}
-              freeMode={true}
-              modules={[FreeMode, Pagination]}
-              allowTouchMove={true}
-              mousewheel={true}
-            >
-              {videosWithDefault.map((video, index) => (
-                <SwiperSlide
-                  key={video._id}
-                  className={index === 0 ? "lg:ml-0 2xl:ml-[10rem]" : ""}
-                >
-                  {video.title ? (
-                    <Video
-                      title={video.title}
-                      thumbnail={video.thumbnailUrl}
-                      views={video.views}
-                      unitOfViews={video.unitOfViews}
-                      likes={video.likes}
-                      unitOfLikes={video.unitOfLikes}
-                      videoUrl={video.videoUrl}
-                      shares={video.shares}
-                      unitOfShares={video.unitOfShares}
-                    />
-                  ) : (
-                    <div className="h-full w-full"></div>
-                  )}
-                </SwiperSlide>
+      <div className="pt-10 pb-20 bg-[#2D261D]">
+        <Container>
+          <div className="text-center text-white">
+            <p className="text-3xl font-bold">
+              The Perfect Formula to Go Viral
+            </p>
+            <p className={`mt-3 ${saira.className}`}>
+              Unlock the Secrets to Captivating Content and Skyrocketing
+              Engagement!
+            </p>
+
+            {/* Prevents Overflow & Adds Responsive Wrapping */}
+            <div className="mt-10 grid grid-cols-4 gap-5">
+              {videos.map((video, index) => (
+                <Video
+                  key={index} // Always include a key when mapping
+                  title={video.title}
+                  thumbnail={video.thumbnailUrl}
+                  views={video.views}
+                  unitOfViews={video.unitOfViews}
+                  likes={video.likes}
+                  unitOfLikes={video.unitOfLikes}
+                  videoUrl={video.videoUrl}
+                  shares={video.shares}
+                  unitOfShares={video.unitOfShares}
+                />
               ))}
-              <div className="md:h-20 h-10"></div>
-            </Swiper>
+            </div>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );

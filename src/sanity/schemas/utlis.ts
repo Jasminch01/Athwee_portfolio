@@ -1,12 +1,12 @@
 import { createClient, groq } from "next-sanity";
 
-export async function getVideos() {
-  const client = createClient({
-    projectId: "cvc3rro0",
-    dataset: "production",
-    apiVersion: "2024-01-01",
-  });
+export const client = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string,
+  dataset: "production",
+  apiVersion: "2024-01-01",
+});
 
+export async function getVideos() {
   const query = groq`
   *[_type == "videoContent"]{
     _id,
@@ -28,5 +28,20 @@ export async function getVideos() {
   } catch (error) {
     console.error("Error fetching videos:", error);
     throw new Error("Failed to fetch videos");
+  }
+}
+export async function getAboutContent() {
+  const query = groq`
+  *[_type == "aboutContent"]{
+  description
+  }
+`;
+
+  try {
+    const aboutContent = await client.fetch(query);
+    return aboutContent; // Return the fetched videos
+  } catch (error) {
+    console.error("Error fetching about content:", error);
+    throw new Error("Failed to fetch about content");
   }
 }

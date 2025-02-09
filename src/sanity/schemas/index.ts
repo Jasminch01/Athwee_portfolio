@@ -1,6 +1,6 @@
-import { VideoSchema } from "./videoSchemas";
+import AboutSchema, { VideoSchema } from "./videoSchemas";
 
-const schemas = [VideoSchema];
+const schemas = [VideoSchema, AboutSchema];
 
 
 export default schemas;
