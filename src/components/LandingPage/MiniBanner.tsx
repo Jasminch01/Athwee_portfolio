@@ -85,8 +85,10 @@ const MiniBanner = () => {
                 Now Accessible To You
               </p>
               <div className="flex justify-end">
-                <button className="md:py-3 py-2 text-center px-3 md:px-5 md:mt-5 mt-2 hover:bg-[#F19934] rounded hover:shadow-lg text-black transition border bg-white duration-300 hover:text-white text-sm font-semibold">
-                  Lets Work Together
+                <button className="md:py-3 py-2 text-center px-3 md:px-5 md:mt-5 mt-2 hover:bg-[#00C853] rounded hover:shadow-lg text-black transition border bg-white duration-300 hover:text-white text-sm font-semibold">
+                  <Link href={"mailto:hello.athwee@gmail.com"}>
+                    Let's Work Together
+                  </Link>
                 </button>
               </div>
             </div>
