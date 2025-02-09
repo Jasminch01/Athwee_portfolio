@@ -22,7 +22,7 @@ const Video: React.FC<VideoProps> = ({
         <Link href={videoUrl} target="_blank">
           <div className="relative">
             <Image
-              className=" h-[23rem] rounded-2xl object-cover"
+              className=" w-full h-[23rem] rounded-2xl object-cover"
               src={thumbnail}
               width={500}
               height={400}

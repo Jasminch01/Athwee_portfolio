@@ -4,6 +4,18 @@ import Marquee from "react-fast-marquee";
 
 const brands = [
   {
+    path: "/englishT.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/foodpanda-logo.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/primary.png",
+    alt: "brand-logo",
+  },
+  {
     path: "/download.svg",
     alt: "brand-logo",
   },
@@ -70,6 +82,18 @@ const brands = [
 ];
 const brands1 = [
   {
+    path: "/englishT.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/foodpanda-logo.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/primary.png",
+    alt: "brand-logo",
+  },
+  {
     path: "/dp-world.svg",
     alt: "brand-logo",
   },
@@ -133,17 +157,17 @@ const brands1 = [
     path: "/google.svg",
     alt: "brand-logo",
   },
-  {
-    path: "/karat.svg",
-    alt: "brand-logo",
-  },
 ];
 
 const Brands = () => {
   return (
     <div>
       <div className="text-white text-center">
-        <p className="text-3xl text-[#00C853]" data-aos="fade-down" data-aos-duration="300">
+        <p
+          className="text-3xl text-[#00C853]"
+          data-aos="fade-down"
+          data-aos-duration="300"
+        >
           Collaborate with
         </p>
         <p
