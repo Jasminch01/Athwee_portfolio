@@ -43,15 +43,15 @@ const Hero = () => {
               </p>
             </div>
             <div>
-              <button
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="py-3 px-5 mt-5 bg-[#00C853] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white"
-              >
-                <Link href={"mailto:hello.athwee@gmail.com"}>
+              <Link href={"mailto:hello.athwee@gmail.com"}>
+                <button
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  className="py-3 px-5 mt-5 bg-[#00C853] rounded hover:shadow-lg hover:text-black transition duration-300 font-medium text-white"
+                >
                   Let's Collaborate
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
             <div
               data-aos="fade-up"

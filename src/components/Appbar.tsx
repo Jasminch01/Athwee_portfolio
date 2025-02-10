@@ -51,10 +51,30 @@ const Appbar = () => {
               </Link>
             </div>
             <div className="space-x-5 text-white hidden md:block">
-              <Link href={"#social"} className="hover:text-[#00C853] transition uppercase" >Social</Link>
-              <Link href={"#videos"} className="hover:text-[#00C853] transition uppercase" >Videos</Link>
-              <Link href={"#about"} className="hover:text-[#00C853] transition uppercase" >About</Link>
-              <Link href={"#contact"} className="hover:text-[#00C853] transition uppercase" >Let's connect</Link>
+              <Link
+                href={"#social"}
+                className="hover:text-[#00C853] transition uppercase"
+              >
+                Social
+              </Link>
+              <Link
+                href={"#videos"}
+                className="hover:text-[#00C853] transition uppercase"
+              >
+                Videos
+              </Link>
+              <Link
+                href={"#about"}
+                className="hover:text-[#00C853] transition uppercase"
+              >
+                About
+              </Link>
+              <Link
+                href={"mailto:hello.athwee@gmail.com"}
+                className="hover:text-[#00C853] transition uppercase"
+              >
+                Let's connect
+              </Link>
             </div>
             {!isOpen ? (
               <CgMenuRight
@@ -83,10 +103,34 @@ const Appbar = () => {
               >
                 <div className="flex-col space-y-5 mt-36">
                   <nav className="space-y-5 flex flex-col text-center text-white">
-                    <Link href={"#social"} className="hover:text-[#00C853] transition text-2xl uppercase" onClick={() => setIsOpen(false)}>Social</Link>
-                    <Link href={"#videos"} onClick={() => setIsOpen(false)} className="hover:text-[#00C853] transition text-2xl uppercase">Videos</Link>
-                    <Link href={"#about"} onClick={() => setIsOpen(false)} className="hover:text-[#00C853] transition text-2xl uppercase">About</Link>
-                    <Link href={"#contact"} onClick={() => setIsOpen(false)} className="hover:text-[#00C853] transition text-2xl uppercase">let's connect</Link>
+                    <Link
+                      href={"#social"}
+                      className="hover:text-[#00C853] transition text-2xl uppercase"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Social
+                    </Link>
+                    <Link
+                      href={"#videos"}
+                      onClick={() => setIsOpen(false)}
+                      className="hover:text-[#00C853] transition text-2xl uppercase"
+                    >
+                      Videos
+                    </Link>
+                    <Link
+                      href={"#about"}
+                      onClick={() => setIsOpen(false)}
+                      className="hover:text-[#00C853] transition text-2xl uppercase"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href={"mailto:hello.athwee@gmail.com"}
+                      onClick={() => setIsOpen(false)}
+                      className="hover:text-[#00C853] transition text-2xl uppercase"
+                    >
+                      let's connect
+                    </Link>
                   </nav>
                 </div>
               </div>
