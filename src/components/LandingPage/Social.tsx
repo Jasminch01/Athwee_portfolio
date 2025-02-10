@@ -57,7 +57,7 @@ export default function SocialSection() {
                   loop
                   autoplay
                   speed={0.5}
-                  className="md:w-[600px]"
+                  className="xl:w-[600px]"
                 />
               </div>
             </div>

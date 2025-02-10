@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, EffectCoverflow, Pagination} from "swiper/modules";
+import { FreeMode, EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
@@ -83,7 +83,12 @@ const Testimonials = () => {
             },
           }}
           modules={[FreeMode, EffectCoverflow, Pagination]}
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+            renderBullet: (index, className) => {
+              return `<span class="${className} custom-bullet"></span>`;
+            },
+          }}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide

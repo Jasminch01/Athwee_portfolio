@@ -34,7 +34,7 @@ const generalSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Athwee | Promote good things & spread positivity",
+  title: "Athwee - Promote good things & spread positivity",
   description:
     "Explore Athwee Marma's portfolio featuring high-quality content creation, brand partnerships, and digital storytelling",
 

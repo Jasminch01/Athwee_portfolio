@@ -31,8 +31,6 @@ const MiniBanner = () => {
 
             {/* Navigation Links */}
             <div
-              data-aos="fade-down"
-              data-aos-duration="300"
               className="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-8 text-white text-sm md:text-base"
             >
               <Link
