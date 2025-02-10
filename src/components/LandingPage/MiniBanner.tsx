@@ -18,9 +18,7 @@ const MiniBanner = () => {
           {/* Main Content */}
           <div className="flex flex-col md:flex-row justify-between items-center absolute bottom-20 inset-x-0 mx-auto max-w-[1280px] px-6 mb-3 space-y-4 md:space-y-0">
             {/* Logo Section */}
-            <div 
-            data-aos="fade-down" data-aos-duration="300"
-            >
+            <div data-aos="fade-down" data-aos-duration="300">
               <Link
                 href={"/"}
                 className="text-2xl font-bold uppercase text-white"
@@ -30,9 +28,7 @@ const MiniBanner = () => {
             </div>
 
             {/* Navigation Links */}
-            <div
-              className="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-8 text-white text-sm md:text-base"
-            >
+            <div className="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-8 text-white text-sm md:text-base">
               <Link
                 href={"#social"}
                 className="hover:text-[#00C853] transition"
@@ -76,18 +72,18 @@ const MiniBanner = () => {
           data-aos="fade-up"
           className="relative bg-mini-banner flex items-end justify-end bg-cover bg-center md:w-[45rem] xl:w-[70rem] md:h-[25rem] w-[20rem] h-[13rem] rounded-3xl"
         >
-           <div className="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
           <div className="flex justify-end md:mr-20 md:mb-16 mb-10 items-center">
             <div className="pr-5 z-10">
               <p className="text-white text-xl md:text-5xl font-bold text-right">
                 Now Accessible To You
               </p>
               <div className="flex justify-end">
-                <button className="md:py-3 py-2 text-center px-3 md:px-5 md:mt-5 mt-2 hover:bg-[#00C853] rounded hover:shadow-lg text-black transition border bg-white duration-300 hover:text-white text-sm font-semibold">
-                  <Link href={"mailto:hello.athwee@gmail.com"}>
+                <Link href={"mailto:hello.athwee@gmail.com"}>
+                  <button className="md:py-3 py-2 text-center px-3 md:px-5 md:mt-5 mt-2 hover:bg-[#00C853] rounded hover:shadow-lg text-black transition border bg-white duration-300 hover:text-white text-sm font-semibold">
                     Let's Work Together
-                  </Link>   
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
