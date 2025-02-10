@@ -36,7 +36,7 @@ const MiniBanner = () => {
                 Social
               </Link>
               <Link
-                href={"#feature"}
+                href={"#videos"}
                 className="hover:text-[#00C853] transition"
               >
                 Videos
