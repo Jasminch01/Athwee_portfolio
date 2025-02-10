@@ -4,7 +4,7 @@
 
 /* Style for pagination bullets */
 .custom-bullet {
-  background-color: #00c853; /* Default bullet color */
+  background-color: #ffff; /* Default bullet color */
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -21,7 +21,7 @@
   transform: scale(1); /* Slightly larger active bullet */
 }
 .swiper-pagination-bullet-inactive.custom-bullet {
-  background-color: white; /* Inactive bullet color */
+  background-color: #ffff; /* Inactive bullet color */
   opacity: 1;
   transform: scale(1); /* Slightly larger active bullet */
 }
