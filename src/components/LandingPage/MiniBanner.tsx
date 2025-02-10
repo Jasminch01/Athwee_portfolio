@@ -45,7 +45,7 @@ const MiniBanner = () => {
                 About
               </Link>
               <Link
-                href={"#contact"}
+                href={"mailto:hello.athwee@gmail.com"}
                 className="hover:text-[#00C853] transition"
               >
                 Let's connect
