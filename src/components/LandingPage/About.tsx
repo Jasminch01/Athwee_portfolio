@@ -74,17 +74,17 @@ const About = () => {
         </div>
         <div className="flex justify-center items-center xl:justify-start space-x-4 mt-10">
           <Link href={"https://x.com/Athweemarma"}>
-            <FaXTwitter className="text-lg" />
+            <FaXTwitter className="text-lg hover:text-[#00C853] transition-colors" />
           </Link>
           <Link
             href={
               "https://www.linkedin.com/in/athwee-marma-6017941b0/?originalSubdomain=bd"
             }
           >
-            <FaLinkedin className="text-lg" />
+            <FaLinkedin className="text-lg hover:text-[#00C853] transition-colors" />
           </Link>
           <Link href={"https://www.youtube.com/AthweeMarma"}>
-            <FaYoutube className="text-2xl" />
+            <FaYoutube className="text-2xl hover:text-[#00C853] transition-colors" />
           </Link>
         </div>
       </Container>
