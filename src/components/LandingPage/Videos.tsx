@@ -40,7 +40,7 @@ const Videos = () => {
             </p>
 
             {/* Prevents Overflow & Adds Responsive Wrapping */}
-            <div className="mt-10 grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-3">
+            <div className="mt-10 grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4">
               {videos.map((video, index) => (
                 <Video
                   key={index} // Always include a key when mapping
