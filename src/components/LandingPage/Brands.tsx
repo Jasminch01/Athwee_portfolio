@@ -135,8 +135,9 @@ const Brands = () => {
                   <Image
                     src={logo.path}
                     alt={logo.alt}
-                    width={120}
-                    height={120}
+                    width={100}
+                    height={100}
+                    className={`w-28 ${logo.path === '/foodpanda-logo.png' && 'w-52'}`}
                   />
                 </div>
               ))}
@@ -147,11 +148,11 @@ const Brands = () => {
               {brands1.map((logo, idx) => (
                 <div key={idx}>
                   <Image
-                    className="w-full"
+                    className={`w-28 ${logo.path === '/foodpanda-logo.png' && 'w-52'}`}
                     src={logo.path}
                     alt={logo.alt}
-                    width={120}
-                    height={120}
+                    width={100}
+                    height={100}
                   />
                 </div>
               ))}

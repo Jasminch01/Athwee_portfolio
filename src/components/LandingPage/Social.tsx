@@ -20,12 +20,12 @@ export default function SocialSection() {
                   EXPLORE <br /> YOUR SOCIALS
                 </p>
                 <p className="mt-5">Let me help you succeed on social media</p>
-                <div className="mt-10 flex items-center space-x-3">
+                <div className="mt-10 flex items-center space-x-5">
                   <Link href={"https://www.tiktok.com/@athweemarma"} target="_blank">
                     <AiOutlineTikTok className="text-2xl hover:text-[#00C853] transform" />
                   </Link>
                   <Link href={"https://x.com/Athweemarma"} target="_blank">
-                    <FaXTwitter className="text-2xl hover:text-[#00C853] transform cursor-pointer" />
+                    <FaXTwitter className="text-3xl hover:text-[#00C853] transform cursor-pointer" />
                   </Link>
                   <Link
                     href={
@@ -33,17 +33,17 @@ export default function SocialSection() {
                     }
                     target="_blank"
                   >
-                    <FaLinkedin className="text-2xl hover:text-[#00C853] transform" />
+                    <FaLinkedin className="text-3xl hover:text-[#00C853] transform" />
                   </Link>
 
                   <Link href={"https://www.instagram.com/athwee_marma/#"} target="_blank">
-                    <FaInstagram className="cursor-pointer hover:text-[#00C853] text-2xl" />
+                    <FaInstagram className="cursor-pointer hover:text-[#00C853] text-3xl" />
                   </Link>
                   <Link href={"https://www.facebook.com/marmaathwee"} target="_blank">
-                    <FaFacebook className="cursor-pointer hover:text-[#00C853] text-2xl" />
+                    <FaFacebook className="cursor-pointer hover:text-[#00C853] text-3xl" />
                   </Link>
                   <Link href={"https://www.youtube.com/AthweeMarma"} target="_blank">
-                    <FaYoutube className="text-3xl hover:text-[#00C853]" />
+                    <FaYoutube className="text-4xl hover:text-[#00C853]" />
                   </Link>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function SocialSection() {
                   loop
                   autoplay
                   speed={0.5}
-                  className="xl:w-[600px]"
+                  className="2xl:w-[600px]"
                 />
               </div>
             </div>
