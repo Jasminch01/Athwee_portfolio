@@ -18,7 +18,7 @@ const MiniBanner = () => {
           {/* Main Content */}
           <div className="flex flex-col md:flex-row justify-between items-center absolute bottom-20 inset-x-0 mx-auto max-w-[1280px] px-6 mb-3 space-y-4 md:space-y-0">
             {/* Logo Section */}
-            <div data-aos="fade-down" data-aos-duration="300">
+            <div>
               <Link
                 href={"/"}
                 className="text-2xl font-bold uppercase text-white"
@@ -31,22 +31,23 @@ const MiniBanner = () => {
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-8 text-white text-sm md:text-base">
               <Link
                 href={"#social"}
-                className="hover:text-[#00C853] transition"
+                className="hover:text-[#00C853] transition-colors"
               >
                 Social
               </Link>
               <Link
                 href={"#videos"}
-                className="hover:text-[#00C853] transition"
+                className="hover:text-[#00C853] transition-colors"
               >
                 Videos
               </Link>
-              <Link href={"#about"} className="hover:text-[#00C853] transition">
+              <Link href={"#about"} className="hover:text-[#00C853] transition-colors">
                 About
               </Link>
               <Link
                 href={"mailto:hello.athwee@gmail.com"}
-                className="hover:text-[#00C853] transition"
+                className="hover:text-[#00C853] transition-colors"
+                target="_blank"
               >
                 Let's connect
               </Link>
@@ -80,7 +81,7 @@ const MiniBanner = () => {
               </p>
               <div className="flex justify-end">
                 <Link href={"mailto:hello.athwee@gmail.com"}>
-                  <button className="md:py-3 py-2 text-center px-3 md:px-5 md:mt-5 mt-2 hover:bg-[#00C853] rounded hover:shadow-lg text-black transition border bg-white duration-300 hover:text-white text-sm font-semibold">
+                  <button className="md:py-3 py-2 text-center px-3 md:px-5 md:mt-5 mt-2 bg-[#00C853] rounded hover:shadow-lg text-white transition duration-300 hover:text-black text-sm font-bold">
                     Let's Work Together
                   </button>
                 </Link>

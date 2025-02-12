@@ -12,71 +12,49 @@ const brands = [
     alt: "brand-logo",
   },
   {
+    path: "/englishT.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/foodpanda-logo.png",
+    alt: "brand-logo",
+  },
+  {
     path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/download.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/creator.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/earth.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/gg.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/kk.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/google.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/karat.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/link.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/light.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/payonner.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/voss.svg",
     alt: "brand-logo",
   },
   {
     path: "/dp-world.svg",
     alt: "brand-logo",
-  },
-  {
-    path: "/go-pro.svg",
+  },  {
+    path: "/englishT.png",
     alt: "brand-logo",
   },
   {
-    path: "/infocom.svg",
+    path: "/foodpanda-logo.png",
     alt: "brand-logo",
   },
   {
-    path: "/creator.svg",
+    path: "/primary.png",
     alt: "brand-logo",
   },
   {
-    path: "/google.svg",
+    path: "/dp-world.svg",
+    alt: "brand-logo",
+  },  {
+    path: "/englishT.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/foodpanda-logo.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/primary.png",
+    alt: "brand-logo",
+  },
+  {
+    path: "/dp-world.svg",
     alt: "brand-logo",
   },
 ];
@@ -98,63 +76,35 @@ const brands1 = [
     alt: "brand-logo",
   },
   {
-    path: "/go-pro.svg",
+    path: "/englishT.png",
     alt: "brand-logo",
   },
   {
-    path: "/infocom.svg",
+    path: "/foodpanda-logo.png",
     alt: "brand-logo",
   },
   {
-    path: "/creator.svg",
+    path: "/primary.png",
     alt: "brand-logo",
   },
   {
-    path: "/narative.svg",
+    path: "/dp-world.svg",
     alt: "brand-logo",
   },
   {
-    path: "/solona.svg",
+    path: "/englishT.png",
     alt: "brand-logo",
   },
   {
-    path: "/voss.svg",
+    path: "/foodpanda-logo.png",
     alt: "brand-logo",
   },
   {
-    path: "/kk.svg",
+    path: "/primary.png",
     alt: "brand-logo",
   },
   {
-    path: "/gg.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/kk.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/google.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/karat.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/earth.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/gg.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/kk.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/google.svg",
+    path: "/dp-world.svg",
     alt: "brand-logo",
   },
 ];

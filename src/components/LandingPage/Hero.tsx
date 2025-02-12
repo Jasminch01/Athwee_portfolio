@@ -58,25 +58,21 @@ const Hero = () => {
               data-aos-duration="500"
               className="flex space-x-4 mt-10 2xl:py-[13rem] pb-[14rem]"
             >
-              <Link href={"https://www.instagram.com/athwee_marma/#"}>
-                <FaInstagram className="text-white  cursor-pointer" />
-              </Link>
-              <Link href={"https://www.facebook.com/marmaathwee"}>
-                <FaFacebook className="text-white  cursor-pointer" />
-              </Link>
-              <Link href={"https://x.com/Athweemarma"}>
-                <FaXTwitter className="text-white  cursor-pointer" />
-              </Link>
-              {/* <Link href={"https://www.youtube.com/AthweeMarma"}>
-                <FaYoutube className="text-white  cursor-pointer" />
+              <Link
+                href={"https://www.instagram.com/athwee_marma/#"}
+                target="_blank"
+              >
+                <FaInstagram className="text-white  cursor-pointer hover:text-[#00C853]" />
               </Link>
               <Link
-                href={
-                  "https://www.linkedin.com/in/athwee-marma-6017941b0/?originalSubdomain=bd"
-                }
+                href={"https://www.facebook.com/marmaathwee"}
+                target="_blank"
               >
-                <FaLinkedin className="text-white  cursor-pointer" />
-              </Link> */}
+                <FaFacebook className="text-white  cursor-pointer hover:text-[#00C853]" />
+              </Link>
+              <Link href={"https://x.com/Athweemarma"} target="_blank">
+                <FaXTwitter className="text-white  cursor-pointer hover:text-[#00C853]" />
+              </Link>
             </div>
           </div>
 
