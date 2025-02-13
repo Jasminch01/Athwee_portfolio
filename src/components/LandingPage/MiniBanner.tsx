@@ -8,7 +8,7 @@ const MiniBanner = () => {
   return (
     <div className="bg-[#1C1C1C] relative z-10">
       {/* Top Section */}
-      <div className="py-20 md:h-[60rem]">
+      <div className="py-32 md:h-[70rem]">
         <Brands />
       </div>
 
@@ -68,7 +68,7 @@ const MiniBanner = () => {
       </div>
 
       {/* Image Positioned in the Middle */}
-      <div className="absolute md:top-[40rem] top-[35rem] left-1/2 transform -translate-x-1/2 ">
+      <div className="absolute md:top-[50rem] top-[50rem] left-1/2 transform -translate-x-1/2 ">
         <div
           data-aos="fade-up"
           className="relative bg-mini-banner flex items-end justify-end bg-cover bg-center md:w-[45rem] xl:w-[70rem] md:h-[25rem] w-[20rem] h-[13rem] rounded-3xl"

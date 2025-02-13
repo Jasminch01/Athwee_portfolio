@@ -111,7 +111,7 @@ const brands1 = [
 
 const Brands = () => {
   return (
-    <div>
+    <div className="">
       <div className="text-white text-center">
         <p
           className="text-3xl text-[#00C853]"
