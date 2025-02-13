@@ -20,7 +20,7 @@ export default function SocialSection() {
                   EXPLORE <br /> YOUR SOCIALS
                 </p>
                 <p className="mt-5">Let me help you succeed on social media</p>
-                <div className="mt-10 flex items-center space-x-5">
+                <div className="mt-10 flex items-center space-x-[1.4rem]">
                   <Link href={"https://www.tiktok.com/@athweemarma"} target="_blank">
                     <AiOutlineTikTok className="text-2xl hover:text-[#00C853] transform" />
                   </Link>
@@ -64,6 +64,9 @@ export default function SocialSection() {
                   speed={0.5}
                   className="2xl:w-[600px]"
                 />
+              </div>
+              <div className="absolute right-20 top-[280]">
+                <Image src={'/social-Growth.png'} width={180} height={180} alt="growth-image"/>
               </div>
             </div>
           </div>
