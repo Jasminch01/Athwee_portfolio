@@ -65,8 +65,8 @@ export default function SocialSection() {
                   className="2xl:w-[600px]"
                 />
               </div>
-              <div className="absolute right-20 top-[280]">
-                <Image src={'/social-Growth.png'} width={180} height={180} alt="growth-image"/>
+              <div className="absolute lg:right-20  lg:top-[280] top-52 right-10">
+                <Image src={'/social-Growth.png'} width={150} height={180} alt="growth-image" className="lg:w-[180px]"/>
               </div>
             </div>
           </div>
