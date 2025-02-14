@@ -22,7 +22,7 @@ export default function SocialSection() {
                 <p className="mt-5">Let me help you succeed on social media</p>
                 <div className="mt-10 flex items-center space-x-[1.4rem]">
                   <Link href={"https://www.tiktok.com/@athweemarma"} target="_blank">
-                    <AiOutlineTikTok className="text-2xl hover:text-[#00C853] transform" />
+                    <AiOutlineTikTok className="text-3xl hover:text-[#00C853] transform" />
                   </Link>
                   <Link href={"https://x.com/Athweemarma"} target="_blank">
                     <FaXTwitter className="text-3xl hover:text-[#00C853] transform cursor-pointer" />
