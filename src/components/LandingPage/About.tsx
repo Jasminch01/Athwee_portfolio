@@ -46,7 +46,7 @@ const About = () => {
             <Image
               data-aos="fade-up"
               data-aos-duration="500"
-              className="w-[600px]"
+              className=""
               alt="athwee-about-image"
               width={500}
               height={500}
@@ -54,7 +54,7 @@ const About = () => {
             />
           </div>
           <div
-            className={`space-y-5 justify-end xl:mt-32 mt-5 md:w-[570px] ${saira.className}`}
+            className={`space-y-5 justify-end xl:mt-32 mt-5 md:w-[650px] ${saira.className}`}
           >
             <p
               className="md:text-lg font-saira text-justify"
