@@ -124,13 +124,6 @@ const Appbar = () => {
                     >
                       About
                     </Link>
-                    <Link
-                      href={"mailto:hello.athwee@gmail.com"}
-                      onClick={() => setIsOpen(false)}
-                      className="hover:text-[#00C853] transition text-2xl uppercase"
-                    >
-                      let's connect
-                    </Link>
                   </nav>
                 </div>
               </div>
