@@ -31,7 +31,7 @@ const Video: React.FC<VideoProps> = ({
 
             {/* Play Button */}
             <div className="absolute -bottom-5 right-4">
-              <button className="size-16 bg-[#B9B7BB] text-black rounded-full flex justify-center items-center shadow-md">
+              <button className="size-16 hover:scale-105 transform transition-transform duration-200 bg-[#B9B7BB] text-black rounded-full flex justify-center items-center shadow-md">
               <FaPlay color="white"/>
               </button>
             </div>
