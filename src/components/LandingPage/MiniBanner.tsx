@@ -6,7 +6,7 @@ import Brands from "./Brands";
 
 const MiniBanner = () => {
   return (
-    <div className="bg-[#1C1C1C] relative z-10">
+    <div className="bg-[#0B1221] relative z-10">
       {/* Top Section */}
       <div className="py-32 md:h-[70rem]">
         <Brands />
