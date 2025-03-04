@@ -35,7 +35,7 @@ const Appbar = () => {
 
   return (
     <div
-      className={`md:absolute fixed  z-50 top-0 w-full mx-auto pt-10 ${
+      className={`fixed  z-50 top-0 w-full mx-auto pt-10 ${
         isScrolled && "bg-[#1C1C1C] py-5"
       }`}
     >
@@ -68,12 +68,6 @@ const Appbar = () => {
                 className="hover:text-[#00C853] transition uppercase"
               >
                 About
-              </Link>
-              <Link
-                href={"mailto:hello.athwee@gmail.com"}
-                className="hover:text-[#00C853] transition uppercase"
-              >
-                Let's connect
               </Link>
             </div>
             {!isOpen ? (
