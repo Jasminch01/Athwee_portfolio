@@ -54,10 +54,45 @@ export async function getLatestVideos() {
     throw new Error("Failed to fetch videos");
   }
 }
+export async function getTestimonials() {
+  const query = groq`
+  *[_type == "testimonials"]{
+  _id,
+  name,
+  title,
+  feedback,
+  "image": image.asset->url
+  }
+`;
+
+  try {
+    const aboutContent = await client.fetch(query);
+    return aboutContent; // Return the fetched videos
+  } catch (error) {
+    console.error("Error fetching about content:", error);
+    throw new Error("Failed to fetch about content");
+  }
+}
 export async function getAboutContent() {
   const query = groq`
   *[_type == "aboutContent"]{
   description
+  }
+`;
+
+  try {
+    const aboutContent = await client.fetch(query);
+    return aboutContent; // Return the fetched videos
+  } catch (error) {
+    console.error("Error fetching about content:", error);
+    throw new Error("Failed to fetch about content");
+  }
+}
+export async function getBrands() {
+  const query = groq`
+  *[_type == "brands"]{
+  brand,
+  "brandImage": brandImage.asset->url
   }
 `;
 

@@ -115,6 +115,69 @@ const AboutSchema = {
   ],
 };
 
+const testimonialSchema = {
+  name: "testimonials",
+  title: "Testimonials",
+  type: "document",
+  fields: [
+    {
+      name: "name",
+      title: "Name",
+      type: "string",
+      description: "Client name",
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "title",
+      title: "Title",
+      type: "string",
+      description: "Client title",
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "feedback",
+      title: "Feedback",
+      type: "text",
+      description: "Client Feedback",
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "image",
+      title: "Clinet image",
+      type: "image",
+      description: "Upload the client image",
+      options: {
+        hotspot: true, // Allows image cropping
+      },
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+  ],
+};
+const brandSchema = {
+  name: "brands",
+  title: "Colaborator Brands",
+  type: "document",
+  fields: [
+    {
+      name: "brand",
+      title: "Brand name",
+      type: "string",
+      description: "Name of the brand",
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+    {
+      name: "brandImage",
+      title: "Brand Logo",
+      type: "image",
+      description: "Upload the brand logo",
+      options: {
+        hotspot: true, // Allows image cropping
+      },
+      validation: (Rule: { required: () => any }) => Rule.required(),
+    },
+  ],
+};
+
 const latstVideoSchema = {
   name: "latestVideoContent",
   title: "Latest Video Content",
@@ -211,4 +274,10 @@ const latstVideoSchema = {
   ],
 };
 
-export { VideoSchema, latstVideoSchema, AboutSchema };
+export {
+  VideoSchema,
+  latstVideoSchema,
+  AboutSchema,
+  testimonialSchema,
+  brandSchema,
+};

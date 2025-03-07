@@ -1,115 +1,31 @@
+"use client";
+import { getBrands } from "@/sanity/schemas/utlis";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
-const brands = [
-  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/dp-world.svg",
-    alt: "brand-logo",
-  },  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/dp-world.svg",
-    alt: "brand-logo",
-  },  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/dp-world.svg",
-    alt: "brand-logo",
-  },
-];
-const brands1 = [
-  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/dp-world.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/dp-world.svg",
-    alt: "brand-logo",
-  },
-  {
-    path: "/englishT.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/foodpanda-logo.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/primary.png",
-    alt: "brand-logo",
-  },
-  {
-    path: "/dp-world.svg",
-    alt: "brand-logo",
-  },
-];
+// Define the type for a brand object
+type Brand = {
+  brand: string;
+  brandImage: string;
+};
 
 const Brands = () => {
+  const [brands, setBrands] = useState<Brand[]>([]);
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        const fetchedVideos = await getBrands();
+        setBrands(fetchedVideos);
+      } catch (error) {
+        console.error("Error fetching videos:", error);
+      }
+    };
+
+    fetchVideos();
+  }, []);
+  console.log(brands);
   return (
     <div className="">
       <div className="text-white text-center">
@@ -128,29 +44,32 @@ const Brands = () => {
           Some of the World’s Top Brands
         </p>
         <div className="py-20">
+          {/* First Marquee */}
           <Marquee speed={30}>
             <div className="flex space-x-10 items-center">
-              {brands.map((logo, idx) => (
+              {brands.sort(() => Math.random() - 0.7).map((logo, idx) => (
                 <div key={idx}>
                   <Image
-                    src={logo.path}
-                    alt={logo.alt}
+                    src={logo.brandImage}
+                    alt={"brand-colaborator"}
                     width={100}
                     height={100}
-                    className={`w-28 ${logo.path === '/foodpanda-logo.png' && 'w-52'}`}
+                    className={`w-28 ${logo.brand.toLowerCase() === "foodpanda" && "w-52"}`}
                   />
                 </div>
               ))}
             </div>
           </Marquee>
+
+          {/* Second Marquee */}
           <Marquee direction="right" speed={30}>
             <div className="flex space-x-10 items-center">
-              {brands1.map((logo, idx) => (
+              {brands.map((logo, idx) => (
                 <div key={idx}>
                   <Image
-                    className={`w-28 ${logo.path === '/foodpanda-logo.png' && 'w-52'}`}
-                    src={logo.path}
-                    alt={logo.alt}
+                    className={`w-28 ${logo.brand.toLowerCase() === "foodpanda" && "w-52"}`}
+                    src={logo.brandImage}
+                    alt={"brand-colaborator"}
                     width={100}
                     height={100}
                   />

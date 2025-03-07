@@ -22,3 +22,10 @@ export interface VideoProps {
   unitOfShares: string;
   videoUrl: string;
 }
+
+export interface Ttestimonial {
+  name : string;
+  title : string;
+  feedback : string;
+  image : string;
+}

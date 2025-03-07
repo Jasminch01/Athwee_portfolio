@@ -21,7 +21,6 @@ const LatestVideos = () => {
     fetchVideos();
   }, []);
 
-  console.log(videos);
   return (
     <div className="bg-[#1C1C1C]" id="videos">
       <Container>
