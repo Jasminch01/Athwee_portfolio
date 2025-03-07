@@ -1,4 +1,4 @@
-import AboutSchema, { VideoSchema } from "@/sanity/schemas/videoSchemas";
+import { AboutSchema, latstVideoSchema, VideoSchema } from "@/sanity/schemas/videoSchemas";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 
@@ -10,7 +10,7 @@ const config = defineConfig({
   basePath: "/admin",
   plugins: [deskTool()],
   schema: {
-    types: [VideoSchema, AboutSchema],
+    types: [VideoSchema, AboutSchema, latstVideoSchema],
   },
 });
 

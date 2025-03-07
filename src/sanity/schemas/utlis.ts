@@ -30,6 +30,30 @@ export async function getVideos() {
     throw new Error("Failed to fetch videos");
   }
 }
+export async function getLatestVideos() {
+  const query = groq`
+  *[_type == "latestVideoContent"]{
+    _id,
+    title,
+    "thumbnailUrl": thumbnail.asset->url,
+    views,
+    unitOfViews,
+    likes,
+    unitOfLikes,
+    shares,
+    unitOfShares,
+    videoUrl
+  }
+`;
+
+  try {
+    const videos = await client.fetch(query);
+    return videos; // Return the fetched videos
+  } catch (error) {
+    console.error("Error fetching videos:", error);
+    throw new Error("Failed to fetch videos");
+  }
+}
 export async function getAboutContent() {
   const query = groq`
   *[_type == "aboutContent"]{
