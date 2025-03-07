@@ -1,7 +1,6 @@
 import { VideoProps } from "@/utils/type";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 
 const Video: React.FC<VideoProps> = ({
@@ -15,14 +14,25 @@ const Video: React.FC<VideoProps> = ({
   unitOfShares,
   unitOfViews,
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  const getYouTubeShortsVideoId = (url: string) => {
+    // Extract the video ID from the Shorts URL
+    const shortsRegex = /https:\/\/www\.youtube\.com\/shorts\/([^?&]+)/;
+    const match = url.match(shortsRegex);
+    return match ? match[1] : null;
+  };
   return (
     <div className="px-4 md:px-0">
       <div className="bg-white p-3 rounded-2xl shadow-lg">
         {/* Video Thumbnail */}
-        <Link href={videoUrl} target="_blank">
+        <div onClick={openModal} className="cursor-pointer">
           <div className="relative">
             <Image
-              className=" w-full 2xl:h-[23rem] xl:h-[18rem] lg:h-[15rem] md:h-[20rem] h-[20rem] rounded-2xl object-cover"
+              className="w-full 2xl:h-[23rem] xl:h-[18rem] lg:h-[15rem] md:h-[20rem] h-[20rem] rounded-2xl object-cover"
               src={thumbnail}
               width={500}
               height={400}
@@ -32,11 +42,11 @@ const Video: React.FC<VideoProps> = ({
             {/* Play Button */}
             <div className="absolute -bottom-5 right-4">
               <button className="size-16 hover:scale-105 transform transition-transform duration-200 bg-[#B9B7BB] text-black rounded-full flex justify-center items-center shadow-md">
-              <FaPlay color="white"/>
+                <FaPlay color="white" />
               </button>
             </div>
           </div>
-        </Link>
+        </div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-3 gap-3 mt-10 text-center">
@@ -63,8 +73,34 @@ const Video: React.FC<VideoProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+          onClick={closeModal} // Close modal
+        >
+          <div
+            className="bg-[#2E2E2E] rounded-lg overflow-hidden w-full max-w-[360px] mx-auto relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-4">
+              {" "}
+              {/* Padding inside the modal */}
+              <div className="relative aspect-[9/16] w-full">
+                <iframe
+                  src={`https://www.youtube.com/embed/${getYouTubeShortsVideoId(videoUrl)}?autoplay=1`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
-
 export default Video;
