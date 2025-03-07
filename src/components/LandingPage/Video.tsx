@@ -48,7 +48,6 @@ const Video: React.FC<VideoProps> = ({
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="grid grid-cols-3 gap-3 mt-10 text-center">
           <div className="bg-gray-100 text-black rounded-lg p-2">
             <p className="text-xs font-semibold">Views</p>
@@ -81,19 +80,17 @@ const Video: React.FC<VideoProps> = ({
           onClick={closeModal} // Close modal
         >
           <div
-            className="bg-[#2E2E2E] rounded-lg overflow-hidden w-full max-w-[360px] mx-auto relative"
+            className="overflow-hidden w-full max-w-[360px] mx-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-4">
-              {" "}
-              {/* Padding inside the modal */}
+            <div className="border-8 border-[#00C853] rounded-lg">
               <div className="relative aspect-[9/16] w-full">
                 <iframe
                   src={`https://www.youtube.com/embed/${getYouTubeShortsVideoId(videoUrl)}?autoplay=1`}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="absolute inset-0 w-full h-full rounded-lg"
+                  className="absolute inset-0 w-full h-full"
                 ></iframe>
               </div>
             </div>
