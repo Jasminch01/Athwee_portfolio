@@ -84,7 +84,7 @@ const Video: React.FC<VideoProps> = ({
             onClick={(e) => e.stopPropagation()}
           >
             <div className="border-8 border-[#00C853] rounded-lg">
-              <div className="relative aspect-[9/16] w-full">
+              <div className="relative lg:aspect-[9/16] aspect-[11/16] w-full">
                 <iframe
                   src={`https://www.youtube.com/embed/${getYouTubeShortsVideoId(videoUrl)}?autoplay=1`}
                   frameBorder="0"

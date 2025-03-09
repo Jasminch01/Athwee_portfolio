@@ -2,6 +2,7 @@ import { VideoProps } from "@/utils/type";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaPlay } from "react-icons/fa";
 
 const LatestVideosCard: React.FC<VideoProps> = ({
   title,
@@ -43,7 +44,7 @@ const LatestVideosCard: React.FC<VideoProps> = ({
             {/* Play Button */}
             <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-30 hover:bg-opacity-10 transition-all duration-300">
               <button className="w-16 h-16 bg-white text-black rounded-full flex justify-center items-center shadow-lg transform transition-transform duration-300 hover:scale-105 z-10">
-                ▶
+                <FaPlay color="black" />
               </button>
             </div>
           </div>
