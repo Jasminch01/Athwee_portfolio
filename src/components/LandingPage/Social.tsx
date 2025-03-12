@@ -17,7 +17,7 @@ export default function SocialSection() {
             <div className="flex items-center justify-center">
               <div data-aos="fade-up" data-aos-duration="500">
                 <p className="font-bold md:text-5xl text-3xl">
-                  EXPLORE <br /> YOUR SOCIALS
+                  EXPLORE <br /> MY SOCIALS
                 </p>
                 <p className="mt-5">Let me help you succeed on social media</p>
                 <div className="mt-10 flex items-center space-x-[1.4rem]">

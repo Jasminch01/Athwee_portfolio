@@ -35,8 +35,8 @@ const Appbar = () => {
 
   return (
     <div
-      className={`fixed  z-50 top-0 w-full mx-auto pt-10 ${
-        isScrolled && "bg-[#1C1C1C] py-5"
+      className={`fixed  z-50 top-0 w-full mx-auto py-5 ${
+        isScrolled && "bg-[#1C1C1C]"
       }`}
     >
       <Container>
