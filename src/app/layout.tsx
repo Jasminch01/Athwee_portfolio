@@ -50,12 +50,12 @@ export const metadata: Metadata = {
     "athwee",
     "ath",
   ],
-  authors: [{ name: "Athwee Marma", url: "https://www.athwee.com" }],
+  authors: [{ name: "Athwee Marma", url: "https://www.athweemarma.com" }],
   openGraph: {
     title: "Athwee Marma | Content Creator & Influencer",
     description:
       "Explore Athwee Marma's portfolio featuring high-quality content creation, brand partnerships, and digital storytelling.",
-    url: "https://www.athwee.com",
+    url: "https://www.athweemarma.com",
     type: "website",
   },
 };
